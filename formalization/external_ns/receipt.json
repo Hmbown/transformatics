@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "standing": "Native exact-target build PASS; full imported closure replay INCOMPLETE after 600-second time limit; independent Comparator/Nanoda not run.",
+  "upstream": {
+    "repository": "https://github.com/openai/NavierStokesAndEuler",
+    "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538",
+    "tracked_source_unchanged": true,
+    "lake_manifest_sha256": "5ec1dc8e009008d0efb9601cd38f6ba54e753fd538b0e5f8c3e6c5ec72ee1e09",
+    "dependency_commits": {
+      "Comparator": "19e111e2141cf333c7daff0f64c5f24acc91dd2e",
+      "mathlib": "85e3a25e006c35636f0e53b0e9296caca2685bc0",
+      "lean4export": "cacf989bd75f608700820f6afc595f32e7a99a4d",
+      "plausible": "d9598f07b1bc701f1e3aae163d2681c1fd978793",
+      "LeanSearchClient": "ba67e212be1197b84c1f1f6299488a10a3002713",
+      "importGraph": "d8823026ac7ef130c253089d95685f9877b95323",
+      "proofwidgets": "a8acbfd87375ff4abe14ce09db5b7664d383bc7f",
+      "aesop": "18889deb9e83ea7420ef51c160d6f88552e744e3",
+      "Qq": "507746ab8f4b643ccdacb2ec4cdb5853fa9f8ab3",
+      "batteries": "d54dddc581e08be364c278052863524bff7a99a9",
+      "Cli": "ab3a82db9fea14cf0fd7f5a2de650f4b534640af"
+    }
+  },
+  "official_toolchain": {
+    "release": "v4.34.0-rc2",
+    "archive": "lean-4.34.0-rc2-darwin_aarch64.tar.zst",
+    "archive_sha256": "ca79a92a15c56d0270d9cdba936a07933efd14a7de635b55b09801979ce73909",
+    "github_release_digest_matches": true,
+    "lean_version": "Lean (version 4.34.0-rc2, arm64-apple-darwin24.6.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+    "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+    "leanchecker_binary_sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35"
+  },
+  "source_audit": {
+    "local_modules": 580,
+    "external_mathlib_module_imports": 209,
+    "challenge_in_solution_import_closure": false,
+    "proof_hole_or_axiom_tokens_after_comment_removal": [],
+    "scope": "Lexical source evidence, distinct from an elaborated axiom report.",
+    "report_sha256": "1e6e04769c8ce3fbaefd3d5e5b26500dc574c4f478dfc812b78da70da7a05bff"
+  },
+  "dependency_cache": {
+    "command": [
+      "lake",
+      "exe",
+      "cache",
+      "get"
+    ],
+    "exit_code": 0,
+    "downloaded_and_decompressed_files": 8747,
+    "mathlib_from_source_rebuilt": false,
+    "log_sha256": "bd4ba295f8c2de2a0932d0c002cfaff6bf16d7369fcbc2f63cede4e35f21f892"
+  },
+  "target_build": {
+    "command": [
+      "lake",
+      "--no-ansi",
+      "build",
+      "NavierStokes.ComparatorSolution"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 753.053228855133,
+    "lake_jobs": 9342,
+    "local_navier_stokes_modules_built": 580,
+    "log_sha256": "4d1f3e4dbd3cb10a849d64478817cffa657cc8a3809e4bfb32d84863783645f9",
+    "axioms": {
+      "NavierStokes.Comparator.navier_stokes_breakdown_R3": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "NavierStokes.Comparator.navier_stokes_breakdown_periodic": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "compiled_target_sha256": "69ae88658830594e71f5199f8cec91d03f90bf016eda9c2d826d2a1a3fb3e405"
+  },
+  "environment": {
+    "LEAN_NUM_THREADS": "6 for build; 1 for fresh replay",
+    "build_workspace": "External verification workspace; no toolchain, cache or binaries committed to Transformatics",
+    "cache_locations": "MATHLIB_CACHE_DIR and LAKE_CACHE_DIR under the external workspace; Lake cache override added for target build",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "fresh_import_replay": {
+    "exit_code": null,
+    "timed_out": true,
+    "time_limit_seconds": 600,
+    "elapsed_seconds": 600.1933448314667,
+    "scope": "Bundled Lean kernel full imported constant replay; not an independently implemented verifier.",
+    "command": [
+      "leanchecker",
+      "--fresh",
+      "--verbose",
+      "NavierStokes.ComparatorSolution"
+    ],
+    "status": "INCOMPLETE - TIME LIMIT",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": ""
+  },
+  "independent_comparator": {
+    "status": "NOT RUN",
+    "reason": "The pinned trusted Comparator workflow requires Landrun on Linux; native Darwin build is a different check.",
+    "nanoda_run": false
+  },
+  "excludes": [
+    "No companion Euler build.",
+    "No line-by-line human proof review or external expert acceptance.",
+    "No local authorship of the external singularity construction.",
+    "No unforced ROOT or E-prime result."
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "level": "Entry: high-school algebra and single-variable calculus, with an optional bridge to vectors, partial derivatives, norms and Fourier modes. Research source proofs require the further analysis stated in their chapters.",
+  "routes": {
+    "foundations": [
+      "index",
+      "transformations",
+      "generators",
+      "transfer-systems",
+      "composition",
+      "scaling",
+      "practice"
+    ],
+    "fluid_case_study": [
+      "equation",
+      "activation",
+      "concentration",
+      "steady",
+      "oblique",
+      "viscous",
+      "residuals",
+      "iteration",
+      "published-proof",
+      "new-constructions"
+    ],
+    "one_recurring_example": [
+      "equation",
+      "scaling",
+      "residuals",
+      "iteration"
+    ],
+    "source_audit": [
+      "credits",
+      "evidence",
+      "published-proof",
+      "references"
+    ],
+    "information_and_control": [
+      "index",
+      "transformations",
+      "transfer-systems",
+      "composition",
+      "information-action"
+    ],
+    "calculus_entry": [
+      "index",
+      "transformations",
+      "calculus-bridge",
+      "generators",
+      "transfer-systems",
+      "composition",
+      "practice"
+    ],
+    "experienced_reader": [
+      "reader-map",
+      "transfer-systems",
+      "composition",
+      "residuals",
+      "iteration",
+      "new-constructions",
+      "information-action",
+      "evidence"
+    ]
+  },
+  "chapters": {
+    "index": {
+      "prerequisites": [],
+      "objectives": [
+        "Choose a reading route and distinguish the project’s motivation from its mathematical claims."
+      ]
+    },
+    "transformations": {
+      "prerequisites": [],
+      "objectives": [
+        "Compute pullbacks and finite differences.",
+        "Derive the finite product rule and composition order."
+      ]
+    },
+    "generators": {
+      "prerequisites": [
+        "transformations"
+      ],
+      "objectives": [
+        "Recover an infinitesimal generator from a flow.",
+        "Integrate a generator along a trajectory."
+      ]
+    },
+    "transfer-systems": {
+      "prerequisites": [
+        "generators"
+      ],
+      "objectives": [
+        "Test the fiber criterion for exact model evolution.",
+        "Compose exact transfer maps."
+      ]
+    },
+    "composition": {
+      "prerequisites": [
+        "transfer-systems"
+      ],
+      "objectives": [
+        "Propagate a local defect through repeated maps.",
+        "Explain transient growth in a shear."
+      ]
+    },
+    "scaling": {
+      "prerequisites": [
+        "composition"
+      ],
+      "objectives": [
+        "Convert velocity and derivative norms under scaling.",
+        "Compare diffusion time with observation time."
+      ]
+    },
+    "equation": {
+      "prerequisites": [
+        "generators",
+        "scaling"
+      ],
+      "objectives": [
+        "Derive the energy balance and pressure projection.",
+        "Check an exact decaying shear."
+      ]
+    },
+    "simulator": {
+      "prerequisites": [
+        "equation"
+      ],
+      "objectives": [
+        "Interpret a finite Fourier simulation and its diagnostics.",
+        "Separate resolution evidence from a continuum theorem."
+      ]
+    },
+    "activation": {
+      "prerequisites": [
+        "equation",
+        "composition"
+      ],
+      "objectives": [
+        "Compute a nonlinear output Fourier coefficient.",
+        "Bound the remainder needed for positive-time activation."
+      ]
+    },
+    "concentration": {
+      "prerequisites": [
+        "scaling",
+        "activation"
+      ],
+      "objectives": [
+        "Compute amplitude-volume and diffusion budgets.",
+        "Distinguish an initial rate from accumulated transfer."
+      ]
+    },
+    "steady": {
+      "prerequisites": [
+        "concentration"
+      ],
+      "objectives": [
+        "Explain why a stationary Euler profile is a useful reference.",
+        "Account for viscosity in a finite comparison."
+      ]
+    },
+    "oblique": {
+      "prerequisites": [
+        "steady"
+      ],
+      "objectives": [
+        "Evolve a covector and pressure-corrected polarization.",
+        "Interpret a returning orbit calculation."
+      ]
+    },
+    "viscous": {
+      "prerequisites": [
+        "oblique",
+        "composition"
+      ],
+      "objectives": [
+        "Compare gain, damping and propagated error.",
+        "Separate velocity amplification from strain handover."
+      ]
+    },
+    "residuals": {
+      "prerequisites": [
+        "equation",
+        "composition"
+      ],
+      "objectives": [
+        "Compute the full equation residual, including cutoff terms.",
+        "Prove a simple all-order smooth extension."
+      ]
+    },
+    "iteration": {
+      "prerequisites": [
+        "residuals",
+        "viscous"
+      ],
+      "objectives": [
+        "Distinguish fixed-depth estimates from one infinite construction.",
+        "Construct smooth accumulating pulses with mixed derivative bounds."
+      ]
+    },
+    "published-proof": {
+      "prerequisites": [
+        "iteration",
+        "concentration"
+      ],
+      "objectives": [
+        "Check anisotropic energy and dissipation exponents.",
+        "Explain why mean-stress cancellation leaves a viscosity cost.",
+        "Map local teaching examples to the external proof with attribution."
+      ]
+    },
+    "practice": {
+      "prerequisites": [
+        "scaling",
+        "equation"
+      ],
+      "objectives": [
+        "Complete cumulative transfer and fluid assessments.",
+        "Change an assumption and diagnose the resulting failure."
+      ]
+    },
+    "evidence": {
+      "prerequisites": [
+        "transfer-systems"
+      ],
+      "objectives": [
+        "Read theorem quantifiers and formalization scope.",
+        "Distinguish a local proof, an imported result and a computational check."
+      ]
+    },
+    "glossary": {
+      "prerequisites": [],
+      "objectives": [
+        "Find notation and its chapter-specific meaning."
+      ]
+    },
+    "references": {
+      "prerequisites": [],
+      "objectives": [
+        "Follow each main idea into established mathematical literature."
+      ]
+    },
+    "credits": {
+      "prerequisites": [],
+      "objectives": [
+        "Distinguish human testimony, repository attribution and external scholarship."
+      ]
+    },
+    "new-constructions": {
+      "prerequisites": [
+        "transfer-systems",
+        "residuals",
+        "iteration"
+      ],
+      "objectives": [
+        "Prove a quantitative component-replacement estimate.",
+        "Construct different couplings with the same complete terminal state.",
+        "Compute a phase change that preserves averaged stress but changes the required force, then state the missing transport estimate."
+      ]
+    },
+    "advanced-transfer": {
+      "prerequisites": [
+        "viscous",
+        "residuals",
+        "iteration"
+      ],
+      "objectives": [
+        "Read the separately scoped research extensions with their source proofs.",
+        "Distinguish derivative handover, original-time preparation and finite-region control."
+      ],
+      "optional": true
+    },
+    "information-action": {
+      "prerequisites": [
+        "transfer-systems",
+        "composition"
+      ],
+      "objectives": [
+        "Decide whether an observation permits a control that succeeds for every compatible state.",
+        "Compute the minimum fixed message length for a finite zero-error control problem.",
+        "Derive a transition feasibility region under explicit uncertainty, disturbance, control and cost bounds.",
+        "Distinguish a one-step guarantee from a validated vehicle transition or indefinite invariance."
+      ]
+    },
+    "reader-map": {
+      "prerequisites": [],
+      "objectives": [
+        "Find the book’s central statements using standard mathematical terminology.",
+        "Prove a sharp prediction-error bound from lost information and compare exact memory with noisy observations.",
+        "Distinguish self-contained teaching proofs from summaries requiring their research sources."
+      ],
+      "optional": true
+    },
+    "calculus-bridge": {
+      "prerequisites": [],
+      "objectives": [
+        "Multiply small matrices and compute a measurement derivative along a path.",
+        "Calculate divergence, curl and Laplacian for a shear.",
+        "Compare maximum, root-mean-square and derivative sizes; verify a heat energy identity.",
+        "Use finite Fourier modes and distinguish pointwise from uniform bounds."
+      ],
+      "optional": true
+    }
+  }
+}

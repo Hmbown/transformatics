@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-09-08T19:13:58.297685+00:00",
+  "status": "PASS at local module scope",
+  "upstream": {
+    "repository": "https://github.com/openai/NavierStokesAndEuler",
+    "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538",
+    "import": "NavierStokes.PartitionedCovariance",
+    "import_source_sha256": "2fa4f3f7a6d4780556abc587ce8306952e69aaaabdbeedfd6858e3a2a2c74863",
+    "lean_toolchain": "leanprover/lean4:v4.34.0-rc2",
+    "lake_manifest_sha256": "5ec1dc8e009008d0efb9601cd38f6ba54e753fd538b0e5f8c3e6c5ec72ee1e09"
+  },
+  "local": {
+    "source": "PhaseCovariance.lean",
+    "source_sha256": "352ccc6cc107e4f8633fbfb7b36b1788dab889f4444c3df5d500f194fb291112",
+    "module": "PhaseCovariance",
+    "theorem": "Transformatics.PhaseCovariance.physical_primary_covariance_phase_shift",
+    "compiled_olean_sha256": "0cd27428465e263f116823e6265da69d61374f69f28888a05b39d8d71ce7c665",
+    "compiled_artifact_location": "external verification workspace/local-corollary/PhaseCovariance.olean; not stored in this repository"
+  },
+  "toolchain": {
+    "lean_version": "Lean (version 4.34.0-rc2, arm64-apple-darwin24.6.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+    "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+    "leanchecker": "bundled in the same official Lean distribution",
+    "leanchecker_binary_sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35"
+  },
+  "environment": {
+    "LEAN_NUM_THREADS": "1",
+    "PATH_prefix": "official Lean distribution/bin",
+    "compilation_LEAN_PATH": [
+      "pinned source/.lake/build/lib/lean",
+      "each pinned source/.lake/packages/*/.lake/build/lib/lean"
+    ],
+    "compilation_LEAN_PATH_entry_count": 9,
+    "checker_LEAN_PATH_addition": "external local-corollary directory",
+    "portable_command_paths": "lean and leanchecker resolve to the recorded official binary hashes; LOCAL_COROLLARY is outside this repository"
+  },
+  "compilation": {
+    "command": [
+      "lean",
+      "-o",
+      "${LOCAL_COROLLARY}/PhaseCovariance.olean",
+      "PhaseCovariance.lean"
+    ],
+    "working_directory": "formalization/phase_covariance",
+    "exit_code": 0,
+    "elapsed_seconds": 4.730774583003949,
+    "stdout": "'Transformatics.PhaseCovariance.physical_primary_covariance_phase_shift' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+    "stderr": ""
+  },
+  "module_replay": {
+    "command": [
+      "leanchecker",
+      "--verbose",
+      "PhaseCovariance"
+    ],
+    "working_directory": "${LOCAL_COROLLARY}",
+    "fresh": false,
+    "imports_freshly_replayed": false,
+    "exit_code": 0,
+    "elapsed_seconds": 10.511594582989346,
+    "stdout": "replaying PhaseCovariance\n",
+    "stderr": ""
+  },
+  "setup_retry": {
+    "initial_checker_exit_code": 1,
+    "initial_checker_stderr": "uncaught exception: process 'lean' exited with code 255\nstderr:\ncould not execute external process 'lean'\n\n",
+    "resolution": "Prepended the official bin directory to PATH so leanchecker could launch lean; the recorded replay then passed."
+  },
+  "reported_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": [
+    "Exact phase replacement for two leading radial-tangential covariance components, retaining every imported geometric, partition, cone and scale hypothesis.",
+    "The local corollary was elaborated and replayed against previously built pinned imports.",
+    "No fresh import replay or full external proof replay was performed by this receipt.",
+    "No regularity or material-derivative estimate for arbitrary phases, no full curl-corrected replacement theorem, and no new Navier-Stokes singularity construction."
+  ]
+}

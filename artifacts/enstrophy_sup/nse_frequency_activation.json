@@ -1,0 +1,241 @@
+{
+  "stamp": "2026-09-08",
+  "node": "nse-frequency-activation-local",
+  "evidence_class": "WRITTEN_RESTRICTED_LOCAL_PDE_PROOF_WITH_EXACT_FOURIER_AND_RATIONAL_PINS",
+  "root_status": "OPEN",
+  "E_prime_status": "OPEN",
+  "retired_gso_route_status": "DEAD",
+  "dns_run": false,
+  "exact_interactions": {
+    "checks": {
+      "seed_raw_divergence_zero": true,
+      "seed_reality": true,
+      "seed_frequency_rank_three": true,
+      "seed_mean_zero": true,
+      "first_twelve_modes_on_sqrt2_shell": true,
+      "target_signed_coefficient": true,
+      "first_nonlinearity_mean_l2_squared": true,
+      "initial_energy_transfer_zero": true,
+      "third_order_returns_to_seed_and_creates_sqrt5": true,
+      "feedback_signed_coefficient": true,
+      "next_generated_signed_coefficient": true,
+      "pressure_is_nontrivial_at_next_order": true,
+      "pressure_removes_diagonal_at_this_order": true,
+      "energy_feedback_identity": true,
+      "highpass_split_identity": true
+    },
+    "first_support": [
+      [
+        -1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "third_order_support": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        -2,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        -1,
+        2,
+        0
+      ],
+      [
+        0,
+        -1,
+        -2
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        -1,
+        2
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        -2
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        -2,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        -1
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "first_mean_l2_squared": "3/4",
+    "third_order_mean_l2_squared": "9/16",
+    "third_order_note": "C=B(U,B(U,U))+B(B(U,U),U); time-integrated cubic term has its own heat factors."
+  },
+  "rational_majorant": {
+    "checks": {
+      "tree_recurrence_exact_through_24": true,
+      "ratio_below_three_through_24": true,
+      "convergence_margin_positive": true,
+      "robust_activation_lower_exceeds_one_eighth": true,
+      "activation_threshold_is_one_over_4096": true,
+      "strong_third_derivative_tail_series": true,
+      "far_tail_at_local_endpoint": true
+    },
+    "epsilon": "1/256",
+    "tau_star": "1/512",
+    "worst_normalized_wiener_size": "769/256",
+    "lower_coefficient_divided_by_A_tau": "2442796163/16877486080",
+    "margin_over_one_eighth": "333110403/16877486080",
+    "activation_amplitude_divided_by_A": "1/4096",
+    "majorant_ratio_at_endpoint": "2307/131072",
+    "tree_coefficients_1_to_8": [
+      "1",
+      "1",
+      "3/2",
+      "8/3",
+      "125/24",
+      "54/5",
+      "16807/720",
+      "16384/315"
+    ],
+    "universal_proof_location": "references/navier-stokes/frequency-activation.md#2-the-all-mode-interval-estimate"
+  },
+  "checks": {
+    "fourier.seed_raw_divergence_zero": true,
+    "fourier.seed_reality": true,
+    "fourier.seed_frequency_rank_three": true,
+    "fourier.seed_mean_zero": true,
+    "fourier.first_twelve_modes_on_sqrt2_shell": true,
+    "fourier.target_signed_coefficient": true,
+    "fourier.first_nonlinearity_mean_l2_squared": true,
+    "fourier.initial_energy_transfer_zero": true,
+    "fourier.third_order_returns_to_seed_and_creates_sqrt5": true,
+    "fourier.feedback_signed_coefficient": true,
+    "fourier.next_generated_signed_coefficient": true,
+    "fourier.pressure_is_nontrivial_at_next_order": true,
+    "fourier.pressure_removes_diagonal_at_this_order": true,
+    "fourier.energy_feedback_identity": true,
+    "fourier.highpass_split_identity": true,
+    "majorant.tree_recurrence_exact_through_24": true,
+    "majorant.ratio_below_three_through_24": true,
+    "majorant.convergence_margin_positive": true,
+    "majorant.robust_activation_lower_exceeds_one_eighth": true,
+    "majorant.activation_threshold_is_one_over_4096": true,
+    "majorant.strong_third_derivative_tail_series": true,
+    "majorant.far_tail_at_local_endpoint": true
+  },
+  "all_green": true,
+  "claim_boundary": "Classical convergent all-mode expansion gives a short-time activation theorem for a finite-band 3D seed and small finite-band perturbations; no infinite cascade, global regularity, blow-up, or novelty claim.",
+  "next_obligation": "Analyze spatially concentrated packets with growing Fourier support; control phase, all interactions, and inter-step errors. Sparse mode generation does not implement an energy-supercritical shell amplifier."
+}

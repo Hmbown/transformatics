@@ -1,0 +1,461 @@
+{
+ "title": "Motion, measurement, and the Navier–Stokes results",
+ "voice": "en-US-GuyNeural",
+ "language": "en",
+ "scenes": [
+  {
+   "id": "title",
+   "lead": 1.2,
+   "tail": 1.4,
+   "beats": [
+    {
+     "say": "Motion, measurement, acceleration.",
+     "cap": "Motion, measurement, acceleration."
+    },
+    {
+     "say": "This film is about two results on the Navier Stokes equations released this autumn, and about what they do and do not show. We start with how a fluid equation is built.",
+     "cap": "This film is about two results on the Navier–Stokes equations released this autumn, and about what they do and do not show. We start with how a fluid equation is built."
+    }
+   ]
+  },
+  {
+   "id": "about",
+   "lead": 0.8,
+   "tail": 1.8,
+   "beats": [
+    {
+     "say": "Some background first. Transformatics is a way of thinking about these problems that I put together while trying to work on the Navier Stokes problem with AI tools. It did not solve the problem. Now that these results are out, this film is my attempt to share what I learned along the way.",
+     "cap": "Some background first. Transformatics is a way of thinking about these problems that I put together while trying to work on the Navier–Stokes problem with AI tools. It did not solve the problem. Now that these results are out, this film is my attempt to share what I learned along the way."
+    },
+    {
+     "say": "The idea starts with three things: a state, a rule that updates the state, and a measurement of the state.",
+     "cap": "The idea starts with three things: a state, a rule that updates the state, and a measurement of the state."
+    },
+    {
+     "say": "The question is how the update affects the measurement. A small example: the state is a number x, the update adds one, and the measurement is x squared.",
+     "cap": "The question is how the update affects the measurement. A small example: the state is a number x, the update adds one, and the measurement is x²."
+    },
+    {
+     "say": "Start at two, and the square changes from four to nine. Start at minus two, and it changes from four to one. Both starting points give the same square, so the square alone cannot tell you what comes next.",
+     "cap": "Start at 2, and the square changes from 4 to 9. Start at −2, and it changes from 4 to 1. Both starting points give the same square, so the square alone cannot tell you what comes next."
+    },
+    {
+     "say": "That situation turns out to be central to fluids: a summary of the state that loses information you need later. None of the mathematics here is new. It is standard material on finite differences, dynamical systems, numerical analysis, and estimates for differential equations. Transformatics is a way of organizing it around that one question.",
+     "cap": "That situation turns out to be central to fluids: a summary of the state that loses information you need later. None of the mathematics here is new. It is standard material on finite differences, dynamical systems, numerical analysis, and estimates for differential equations. Transformatics is a way of organizing it around that one question."
+    }
+   ]
+  },
+  {
+   "id": "news",
+   "lead": 0.8,
+   "tail": 1.8,
+   "beats": [
+    {
+     "say": "In September and October of twenty twenty six, OpenAI released mathematical work on the Navier Stokes equations. It is often summarized as a single result.",
+     "cap": "In September and October 2026, OpenAI released mathematical work on the Navier–Stokes equations. It is often summarized as a single result."
+    },
+    {
+     "say": "It is really about three separate questions. The first: if you push a fluid with a carefully chosen smooth force, can its motion break down in finite time? OpenAI released a proof that it can.",
+     "cap": "It is really about three separate questions. The first: if you push a fluid with a carefully chosen smooth force, can its motion break down in finite time? OpenAI released a proof that it can."
+    },
+    {
+     "say": "The second: with a carefully chosen force, can a smooth flow carry out an arbitrary computation? A new collection of papers argues that it can.",
+     "cap": "The second: with a carefully chosen force, can a smooth flow carry out an arbitrary computation? A new collection of papers argues that it can."
+    },
+    {
+     "say": "The third: with no force at all, does a smooth flow stay smooth for all time? This is the famous open problem, and it remains open.",
+     "cap": "The third: with no force at all, does a smooth flow stay smooth for all time? This is the famous open problem, and it remains open."
+    },
+    {
+     "say": "To see how these questions differ, we need to look at what the equation says.",
+     "cap": "To see how these questions differ, we need to look at what the equation says."
+    }
+   ]
+  },
+  {
+   "id": "motion",
+   "lead": 0.8,
+   "tail": 2.0,
+   "beats": [
+    {
+     "say": "Here is fluid in a periodic box. Anything that leaves through one side comes back in through the opposite side.",
+     "cap": "Here is fluid in a periodic box. Anything that leaves through one side comes back in through the opposite side."
+    },
+    {
+     "say": "Each dot is a particle, colored by its starting position.",
+     "cap": "Each dot is a particle, colored by its starting position."
+    },
+    {
+     "say": "The flow is described by a velocity field, u. A particle at position X moves with the velocity at that point: the rate of change of X equals u at time t and position X.",
+     "cap": "The flow is described by a velocity field u. A particle at position X moves with the velocity at that point: X′(t) = u(t, X)."
+    },
+    {
+     "say": "If we let every particle move for a time t, we get a map, Phi sub t, from starting positions to current positions. That map is the transformation.",
+     "cap": "If we let every particle move for a time t, we get a map Φₜ from starting positions to current positions. That map is the transformation."
+    },
+    {
+     "say": "This particular flow is an exact solution of the Navier Stokes equations: four cells rotating in opposite directions, slowly weakening because of viscosity.",
+     "cap": "This particular flow is an exact solution of the Navier–Stokes equations: four cells rotating in opposite directions, slowly weakening because of viscosity."
+    }
+   ]
+  },
+  {
+   "id": "measure",
+   "lead": 0.8,
+   "tail": 1.6,
+   "beats": [
+    {
+     "say": "Now we follow one particle and record the velocity it has as it moves.",
+     "cap": "Now we follow one particle and record the velocity it has as it moves."
+    },
+    {
+     "say": "The velocity arrow turns as the particle goes around the cell, so the particle is accelerating, even though the overall pattern barely changes.",
+     "cap": "The velocity arrow turns as the particle goes around the cell, so the particle is accelerating, even though the overall pattern barely changes."
+    },
+    {
+     "say": "The chain rule splits this rate of change into two parts.",
+     "cap": "The chain rule splits this rate of change into two parts."
+    },
+    {
+     "say": "The first part, the partial derivative of u with respect to t, is the change of the field at a fixed point. Here it is very small. It is only the slow decay due to viscosity.",
+     "cap": "The first part, ∂u/∂t, is the change of the field at a fixed point. Here it is very small. It is only the slow decay due to viscosity."
+    },
+    {
+     "say": "The second part, u dot grad u, is the change the particle experiences because it moves to places where the velocity is different. This is called advection.",
+     "cap": "The second part, (u·∇)u, is the change the particle experiences because it moves to places where the velocity is different. This is called advection."
+    },
+    {
+     "say": "Together they make up the particle's acceleration, which is the left side of the Navier Stokes equation.",
+     "cap": "Together they make up the particle’s acceleration, which is the left side of the Navier–Stokes equation."
+    }
+   ]
+  },
+  {
+   "id": "balance",
+   "lead": 0.8,
+   "tail": 2.0,
+   "beats": [
+    {
+     "say": "The right side of the equation says what causes that acceleration.",
+     "cap": "The right side of the equation says what causes that acceleration."
+    },
+    {
+     "say": "Pressure is high where flows from neighboring cells meet, and low at the centers of the cells.",
+     "cap": "Pressure is high where flows from neighboring cells meet, and low at the centers of the cells."
+    },
+    {
+     "say": "The pressure force, minus grad p, exactly balances the advection term. It is what turns the particle around the cell.",
+     "cap": "The pressure force, −∇p, exactly balances the advection term. It is what turns the particle around the cell."
+    },
+    {
+     "say": "The viscous force, nu times the Laplacian of u, accounts for the slow decay.",
+     "cap": "The viscous force, νΔu, accounts for the slow decay."
+    },
+    {
+     "say": "So the acceleration equals the pressure force plus the viscous force, for every particle and at every time. That is the Navier Stokes equation, read along the motion of the fluid.",
+     "cap": "So the acceleration equals the pressure force plus the viscous force, for every particle and at every time. That is the Navier–Stokes equation, read along the motion of the fluid."
+    }
+   ]
+  },
+  {
+   "id": "layers",
+   "lead": 0.8,
+   "tail": 2.0,
+   "beats": [
+    {
+     "say": "A second exact solution shows the opposite case. Horizontal layers slide past each other, with a speed that varies like a sine wave with height.",
+     "cap": "A second exact solution shows the opposite case. Horizontal layers slide past each other, with a speed that varies like a sine wave with height."
+    },
+    {
+     "say": "Each particle stays in its own layer, and the velocity does not change along a layer. So the advection term is zero, and no pressure is needed.",
+     "cap": "Each particle stays in its own layer, and the velocity does not change along a layer. So the advection term is zero, and no pressure is needed."
+    },
+    {
+     "say": "Only viscosity is left. The equation reduces to a single ordinary differential equation, and the amplitude decays like e to the minus nu N squared t.",
+     "cap": "Only viscosity is left. The equation reduces to a single ordinary differential equation, and the amplitude decays like e^(−νN²t)."
+    },
+    {
+     "say": "The particles slow down and eventually stop. A line of dye that started out straight ends up as a fixed sine curve.",
+     "cap": "The particles slow down and eventually stop. A line of dye that started out straight ends up as a fixed sine curve."
+    },
+    {
+     "say": "With twice as many waves, the decay is four times as fast.",
+     "cap": "With twice as many waves, the decay is four times as fast."
+    }
+   ]
+  },
+  {
+   "id": "energy",
+   "lead": 0.8,
+   "tail": 2.2,
+   "beats": [
+    {
+     "say": "Suppose we keep only one number about the flow: its kinetic energy.",
+     "cap": "Suppose we keep only one number about the flow: its kinetic energy."
+    },
+    {
+     "say": "Here are two layer flows with the same amplitude. One has a single wave and the other has two. They start with exactly the same energy.",
+     "cap": "Here are two layer flows with the same amplitude. One has a single wave and the other has two. They start with exactly the same energy."
+    },
+    {
+     "say": "As they evolve, the first loses energy like e to the minus two nu t, and the second like e to the minus eight nu t.",
+     "cap": "As they evolve, the first loses energy like e^(−2νt), and the second like e^(−8νt)."
+    },
+    {
+     "say": "So knowing the energy at the start is not enough to know the energy later.",
+     "cap": "So knowing the energy at the start is not enough to know the energy later."
+    },
+    {
+     "say": "The energy equation explains this. Energy is lost at a rate set by the velocity gradient, and the gradient is exactly the information about spatial structure that the energy leaves out.",
+     "cap": "The energy equation explains this. Energy is lost at a rate set by the velocity gradient, and the gradient is exactly the information about spatial structure that the energy leaves out."
+    }
+   ]
+  },
+  {
+   "id": "grid",
+   "lead": 0.8,
+   "tail": 2.2,
+   "beats": [
+    {
+     "say": "A computer keeps a different kind of summary: values on a grid. Here we use eight sample heights.",
+     "cap": "A computer keeps a different kind of summary: values on a grid. Here we use eight sample heights."
+    },
+    {
+     "say": "Sample a single sine wave. Then sample a wave with seven oscillations and the opposite sign. At all eight grid points, the two give the same values.",
+     "cap": "Sample a single sine wave. Then sample a wave with seven oscillations and the opposite sign. At all eight grid points, the two give the same values."
+    },
+    {
+     "say": "On the grid, the two states look identical. But one decays like e to the minus nu t, and the other like e to the minus forty nine nu t.",
+     "cap": "On the grid, the two states look identical. But one decays like e^(−νt), and the other like e^(−49νt)."
+    },
+    {
+     "say": "No calculation using only these eight numbers can tell the two apart. The difference was never recorded, so no amount of numerical accuracy recovers it.",
+     "cap": "No calculation using only these eight numbers can tell the two apart. The difference was never recorded, so no amount of numerical accuracy recovers it."
+    }
+   ]
+  },
+  {
+   "id": "question",
+   "lead": 0.8,
+   "tail": 1.6,
+   "beats": [
+    {
+     "say": "This is the question Transformatics is organized around. The flow transforms the state, and a measurement reduces the state to a summary.",
+     "cap": "This is the question Transformatics is organized around. The flow transforms the state, and a measurement reduces the state to a summary."
+    },
+    {
+     "say": "When can the next summary be predicted from the current summary alone? Exactly when any two states with the same summary still have the same summary later.",
+     "cap": "When can the next summary be predicted from the current summary alone? Exactly when any two states with the same summary still have the same summary later."
+    },
+    {
+     "say": "For these flows, energy fails that test, and so do the eight grid values. If we also record the wavenumber, or restrict to waves the grid can resolve, the test is passed for this family.",
+     "cap": "For these flows, energy fails that test, and so do the eight grid values. If we also record the wavenumber, or restrict to waves the grid can resolve, the test is passed for this family."
+    },
+    {
+     "say": "Both of the new results can be understood in terms of this question: what a summary keeps, and what it loses.",
+     "cap": "Both of the new results can be understood in terms of this question: what a summary keeps, and what it loses."
+    }
+   ]
+  },
+  {
+   "id": "peak",
+   "lead": 0.8,
+   "tail": 2.0,
+   "beats": [
+    {
+     "say": "The first result asks whether the peak speed of a fluid can become infinite while its total energy stays finite.",
+     "cap": "The first result asks whether the peak speed of a fluid can become infinite while its total energy stays finite."
+    },
+    {
+     "say": "Energy adds up the square of the speed over the whole region. So a speed that grows without bound can still have finite energy, if it is confined to a region that shrinks quickly enough.",
+     "cap": "Energy adds up the square of the speed over the whole region. So a speed that grows without bound can still have finite energy, if it is confined to a region that shrinks quickly enough."
+    },
+    {
+     "say": "In OpenAI's construction, a rotating core collapses toward a point as the time t approaches one. We write tau for the time remaining.",
+     "cap": "In OpenAI’s construction, a rotating core collapses toward a point as the time t approaches 1. We write τ for the time remaining."
+    },
+    {
+     "say": "The radius of the core shrinks like the square root of tau. Its height shrinks a little more slowly, so the core becomes a thinner and thinner column.",
+     "cap": "The radius of the core shrinks like √τ. Its height shrinks a little more slowly, so the core becomes a thinner and thinner column."
+    },
+    {
+     "say": "Its swirling and axial speeds grow like tau to the power minus one half minus h, where h is a fixed number smaller than one hundredth.",
+     "cap": "Its swirling and axial speeds grow like τ^(−½−h), where h is a fixed number smaller than 1/100."
+    },
+    {
+     "say": "Volume times speed squared gives the energy of the core. It behaves like tau to the power one half minus three h, so it goes to zero while the speed goes to infinity.",
+     "cap": "Volume times speed squared gives the energy of the core. It behaves like τ^(½−3h), so it goes to zero while the speed goes to infinity."
+    },
+    {
+     "say": "This calculation only shows that the scenario is not ruled out by energy. The difficult part is to build an actual solution of the equation that behaves this way.",
+     "cap": "This calculation only shows that the scenario is not ruled out by energy. The difficult part is to build an actual solution of the equation that behaves this way."
+    }
+   ]
+  },
+  {
+   "id": "residual",
+   "lead": 0.8,
+   "tail": 2.0,
+   "beats": [
+    {
+     "say": "There is a subtlety about the force. Take any incompressible velocity field, substitute it into the equation, and define the force to be whatever is left over. Then the equation holds by definition.",
+     "cap": "There is a subtlety about the force. Take any incompressible velocity field, substitute it into the equation, and define the force to be whatever is left over. Then the equation holds by definition."
+    },
+    {
+     "say": "For that reason the theorem places strong conditions on the force. It has to be smooth, it has to vanish outside a bounded region of space and time, and all of its derivatives have to stay bounded, including at the moment the velocity blows up.",
+     "cap": "For that reason the theorem places strong conditions on the force. It has to be smooth, it has to vanish outside a bounded region of space and time, and all of its derivatives have to stay bounded, including at the moment the velocity blows up."
+    },
+    {
+     "say": "To see why this matters, take a classical vortex and shrink it by hand, so that its width decreases like the square root of tau. This is a teaching example, not the flow from the paper.",
+     "cap": "To see why this matters, take a classical vortex and shrink it by hand, so that its width decreases like √τ. This is a teaching example, not the flow from the paper."
+    },
+    {
+     "say": "Pressure can balance the rotation, but the leftover force is not bounded. Its maximum grows like tau to the minus three halves, which the theorem does not allow.",
+     "cap": "Pressure can balance the rotation, but the leftover force is not bounded. Its maximum grows like τ^(−3/2), which the theorem does not allow."
+    },
+    {
+     "say": "In the paper, the core is designed so that its momentum balances to leading order inside it. The remaining imbalance is in a ring at the edge of the core, and it still becomes unbounded. It has to be cancelled by something inside the fluid itself.",
+     "cap": "In the paper, the core is designed so that its momentum balances to leading order inside it. The remaining imbalance is in a ring at the edge of the core, and it still becomes unbounded. It has to be cancelled by something inside the fluid itself."
+    }
+   ]
+  },
+  {
+   "id": "waves",
+   "lead": 0.8,
+   "tail": 2.0,
+   "beats": [
+    {
+     "say": "The paper cancels it with waves. The velocity of a wave averages to zero, but the flux of momentum is a product of velocities, and the average of a product need not be zero.",
+     "cap": "The paper cancels it with waves. The velocity of a wave averages to zero, but the flux of momentum is a product of velocities, and the average of a product need not be zero."
+    },
+    {
+     "say": "For a wave with amplitude a, the average of w tensor w is one half of a tensor a. The divergence of this average acts like a force on the background flow.",
+     "cap": "For a wave with amplitude a, the average of w ⊗ w is ½ a ⊗ a. The divergence of this average acts like a force on the background flow."
+    },
+    {
+     "say": "The construction uses two families of waves with different directions. Any target inside the cone they span can be written as a positive combination of the two, and the paper shapes the core so that the stress it needs always lies inside that cone.",
+     "cap": "The construction uses two families of waves with different directions. Any target inside the cone they span can be written as a positive combination of the two, and the paper shapes the core so that the stress it needs always lies inside that cone."
+    },
+    {
+     "say": "The waves get their energy from the shear of the background flow. Here is an exact solution in a simpler setting: a single wave in a uniform shear.",
+     "cap": "The waves get their energy from the shear of the background flow. Here is an exact solution in a simpler setting: a single wave in a uniform shear."
+    },
+    {
+     "say": "The shear tilts the wave crests. While they lean against the flow, the wave takes energy from it and grows. Once the crests tip past vertical and lean with the flow, the wave gives energy back, and viscosity damps what remains.",
+     "cap": "The shear tilts the wave crests. While they lean against the flow, the wave takes energy from it and grows. Once the crests tip past vertical and lean with the flow, the wave gives energy back, and viscosity damps what remains."
+    },
+    {
+     "say": "The pulses in the paper also start from an exponentially small seed, grow by drawing energy from the background, and then decay when viscosity takes over. They sit on a rotating core and grow by a different mechanism, so this picture is an analogy, not the construction itself.",
+     "cap": "The pulses in the paper also start from an exponentially small seed, grow by drawing energy from the background, and then decay when viscosity takes over. They sit on a rotating core and grow by a different mechanism, so this picture is an analogy, not the construction itself."
+    }
+   ]
+  },
+  {
+   "id": "proof",
+   "lead": 0.8,
+   "tail": 2.0,
+   "beats": [
+    {
+     "say": "The proof is a long sequence of steps, and each one takes many pages.",
+     "cap": "The proof is a long sequence of steps, and each one takes many pages."
+    },
+    {
+     "say": "First, build the collapsing core and the smooth flow outside it. Then write the remaining imbalance as a stress in the ring, and add two families of pulses, on finer and finer scales, whose average flux cancels it.",
+     "cap": "First, build the collapsing core and the smooth flow outside it. Then write the remaining imbalance as a stress in the ring, and add two families of pulses, on finer and finer scales, whose average flux cancels it."
+    },
+    {
+     "say": "Next, correct the new errors this introduces, repeatedly, until what remains vanishes to all orders at the singular point. Then cut the flow off smoothly in space, and show that the force extends smoothly past time one.",
+     "cap": "Next, correct the new errors this introduces, repeatedly, until what remains vanishes to all orders at the singular point. Then cut the flow off smoothly in space, and show that the force extends smoothly past time 1."
+    },
+    {
+     "say": "Two arguments finish it. The energy stays bounded because the force is bounded. And any smooth solution with bounded energy, the same force and the same initial state has to agree with this one at every time before one, so it cannot stay smooth past time one. For this force and this initial state, there is no smooth solution with bounded energy for all time.",
+     "cap": "Two arguments finish it. The energy stays bounded because the force is bounded. And any smooth solution with bounded energy, the same force and the same initial state has to agree with this one at every time before 1, so it cannot stay smooth past time 1. For this force and this initial state, there is no smooth solution with bounded energy for all time."
+    },
+    {
+     "say": "The paper states that this settles the forced breakdown cases in the official Millennium Prize problem statement, both on all of space and on the periodic box. OpenAI also released a formal version of the proof in the Lean proof assistant.",
+     "cap": "The paper states that this settles the forced breakdown cases, (C) and (D), in the official Millennium Prize problem statement, both on all of space and on the periodic box. OpenAI also released a formal version of the proof in the Lean proof assistant."
+    },
+    {
+     "say": "The result depends on the force. The force is not zero, and it cannot be: with no force and a fluid initially at rest, the fluid simply stays at rest.",
+     "cap": "The result depends on the force. The force is not zero, and it cannot be: with no force and a fluid initially at rest, the fluid simply stays at rest."
+    }
+   ]
+  },
+  {
+   "id": "compute",
+   "lead": 0.8,
+   "tail": 2.0,
+   "beats": [
+    {
+     "say": "A computer program changes a stored state one step at a time. Here is a small example: start with zero, add one, add one again, and stop.",
+     "cap": "A computer program changes a stored state one step at a time. Here is a small example: start with zero, add one, add one again, and stop."
+    },
+    {
+     "say": "Draw one point for each state of this little program. We can represent its steps by moving a marker from zero to one to two. The marked region represents the stopped state.",
+     "cap": "Draw one point for each state of this little program. We can represent its steps by moving a marker from zero to one to two. The marked region represents the stopped state."
+    },
+    {
+     "say": "The papers extend this idea to an arbitrary computing machine. Its entire configuration, including its stored symbols and its place in the program, is encoded in the coordinates of a particle. The digits of those coordinates store the symbols.",
+     "cap": "The papers extend this idea to an arbitrary computing machine. Its entire configuration, including its stored symbols and its place in the program, is encoded in the coordinates of a particle. The digits of those coordinates store the symbols."
+    },
+    {
+     "say": "One instruction reads only a few of those symbols. Configurations with the same relevant symbols form small boxes. The flow carries each source box onto the box representing that instruction's output, performing the update for every encoded point inside.",
+     "cap": "One instruction reads only a few of those symbols. Configurations with the same relevant symbols form small boxes. The flow carries each source box onto the box representing that instruction’s output, performing the update for every encoded point inside."
+    },
+    {
+     "say": "The fluid is incompressible, so each of these motions must preserve volume. If a box stretches in one direction, it must shrink in another.",
+     "cap": "The fluid is incompressible, so each of these motions must preserve volume. If a box stretches in one direction, it must shrink in another."
+    },
+    {
+     "say": "A smooth flow cannot merge two particles into one. Ordinary programs can send different inputs to the same output. The construction keeps a record of the computation's history so that the encoded steps remain reversible.",
+     "cap": "A smooth flow cannot merge two particles into one. Ordinary programs can send different inputs to the same output. The construction keeps a record of the computation’s history so that the encoded steps remain reversible."
+    },
+    {
+     "say": "This diagram shows the required agreement. Take a machine state and encode it as a point, then let that point flow for one instruction. It arrives at the same point you would get by first executing the instruction and then encoding the new state.",
+     "cap": "This diagram shows the required agreement. Take a machine state and encode it as a point, then let that point flow for one instruction. It arrives at the same point you would get by first executing the instruction and then encoding the new state."
+    },
+    {
+     "say": "A designated particle enters a target box exactly when the machine stops. The motion is arranged so that it cannot enter this box accidentally between instructions. Reaching the box is therefore a way to read the outcome of the computation.",
+     "cap": "A designated particle enters a target box exactly when the machine stops. The motion is arranged so that it cannot enter this box accidentally between instructions. Reaching the box is therefore a way to read the outcome of the computation."
+    },
+    {
+     "say": "Now suppose an algorithm could decide whether that particle ever reaches the box, for every force in this family. We could encode any program and use the algorithm to decide whether it stops. But no algorithm can decide this for every program and input. So the fluid question has the same limitation.",
+     "cap": "Now suppose an algorithm could decide whether that particle ever reaches the box, for every force in this family. We could encode any program and use the algorithm to decide whether it stops. But no algorithm can decide this for every program and input. So the fluid question has the same limitation."
+    },
+    {
+     "say": "The prescribed force implements these moves. It is computed from the machine's rules and input, without first finding out whether the machine stops. With that force, the flow stays smooth for all time while the particle follows the encoded computation.",
+     "cap": "The prescribed force implements these moves. It is computed from the machine’s rules and input, without first finding out whether the machine stops. With that force, the flow stays smooth for all time while the particle follows the encoded computation."
+    }
+   ]
+  },
+  {
+   "id": "standing",
+   "lead": 0.8,
+   "tail": 2.0,
+   "beats": [
+    {
+     "say": "The two results use a deliberately chosen force in different ways.",
+     "cap": "The two results use a deliberately chosen force in different ways."
+    },
+    {
+     "say": "In the first, a smooth force supplies energy to a flow whose peak speed becomes unbounded in finite time. In the second, the force makes a smooth flow carry out a computation, and the particle's arrival records whether that computation stops.",
+     "cap": "In the first, a smooth force supplies energy to a flow whose peak speed becomes unbounded in finite time. In the second, the force makes a smooth flow carry out a computation, and the particle’s arrival records whether that computation stops."
+    },
+    {
+     "say": "For general smooth initial data in three dimensions, whether the flow always stays smooth with no force remains an open problem.",
+     "cap": "For general smooth initial data in three dimensions, whether the flow always stays smooth with no force remains an open problem."
+    },
+    {
+     "say": "My notes and the calculations used in this film are on GitHub.",
+     "cap": "My notes and the calculations used in this film are on GitHub."
+    }
+   ]
+  },
+  {
+   "id": "credits",
+   "lead": 0.4,
+   "tail": 7.0,
+   "beats": []
+  }
+ ]
+}

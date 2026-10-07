@@ -1,0 +1,125 @@
+{
+  "title": "Transformatics",
+  "subtitle": "Finite change, continuous evolution, and the passage between mathematical models",
+  "edition": "First edition · 8 September 2026",
+  "chapters": [
+    [
+      "index",
+      "Preface and how to use this book"
+    ],
+    [
+      "transformations",
+      "Finite changes and observables"
+    ],
+    [
+      "generators",
+      "Flows and generators"
+    ],
+    [
+      "transfer-systems",
+      "States, models, and exact transfer"
+    ],
+    [
+      "composition",
+      "Composition and the cost of error"
+    ],
+    [
+      "scaling",
+      "Scale, norms, and resolution"
+    ],
+    [
+      "equation",
+      "The fluid equation"
+    ],
+    [
+      "simulator",
+      "Three-dimensional fluid laboratory"
+    ],
+    [
+      "activation",
+      "Creating a new frequency"
+    ],
+    [
+      "concentration",
+      "Concentration and the time budget"
+    ],
+    [
+      "steady",
+      "A steady reference flow"
+    ],
+    [
+      "oblique",
+      "Pressure and returning covectors"
+    ],
+    [
+      "viscous",
+      "Finite amplification and strain handover"
+    ],
+    [
+      "residuals",
+      "Residuals and smooth forcing"
+    ],
+    [
+      "iteration",
+      "From finite stages to one evolution"
+    ],
+    [
+      "published-proof",
+      "Reading the published construction"
+    ],
+    [
+      "new-constructions",
+      "Making a new construction"
+    ],
+    [
+      "information-action",
+      "Information and reliable action"
+    ],
+    [
+      "practice",
+      "Practice and proof workshop"
+    ],
+    [
+      "evidence",
+      "Reading a mathematical claim"
+    ],
+    [
+      "glossary",
+      "Notation and glossary"
+    ],
+    [
+      "references",
+      "Connections to the literature"
+    ],
+    [
+      "credits",
+      "Origin, collaborators, and credits"
+    ],
+    [
+      "reader-map",
+      "A mathematical reading map"
+    ],
+    [
+      "calculus-bridge",
+      "A bridge from single-variable calculus"
+    ],
+    [
+      "advanced-transfer",
+      "Advanced transfer: research companion"
+    ]
+  ],
+  "parts": {
+    "transformations": "I · Transformations and models",
+    "equation": "II · Fluid mechanics",
+    "activation": "III · Transfer in nonlinear equations",
+    "residuals": "IV · Construction and limits",
+    "practice": "V · Study and reference",
+    "advanced-transfer": "Optional research companion",
+    "reader-map": "Optional reading guides"
+  },
+  "optional_chapters": [
+    "reader-map",
+    "calculus-bridge",
+    "advanced-transfer"
+  ]
+}

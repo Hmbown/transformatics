@@ -1,0 +1,130 @@
+{
+  "date": "2026-09-08",
+  "scope": "Exact periodic Fourier identities and restricted failure of a generic envelope-only L2 stability bound; no cascade, completed handover or global NS result.",
+  "method": "Symbolic sparse Fourier convolution, exact Leray multiplier and Parseval pairings; no sampled grid or DNS.",
+  "checks": [
+    {
+      "name": "real-solenoidal-1-5",
+      "passed": true
+    },
+    {
+      "name": "zero-mean-1-5",
+      "passed": true
+    },
+    {
+      "name": "zero-self-interaction-1-5",
+      "passed": true
+    },
+    {
+      "name": "energy-production-1-5",
+      "passed": true
+    },
+    {
+      "name": "error-mass-1-5",
+      "passed": true
+    },
+    {
+      "name": "error-dissipation-1-5",
+      "passed": true
+    },
+    {
+      "name": "pressure-energy-invariance-1-5",
+      "passed": true
+    },
+    {
+      "name": "mean-datum-solenoidal-1-5",
+      "passed": true
+    },
+    {
+      "name": "no-initial-low-modes-1-5",
+      "passed": true
+    },
+    {
+      "name": "generated-normal-mean-1-5",
+      "passed": true
+    },
+    {
+      "name": "unprojected-normal-zero-1-5",
+      "passed": true
+    },
+    {
+      "name": "projected-mean-solenoidal-1-5",
+      "passed": true
+    },
+    {
+      "name": "real-solenoidal-2-13",
+      "passed": true
+    },
+    {
+      "name": "zero-mean-2-13",
+      "passed": true
+    },
+    {
+      "name": "zero-self-interaction-2-13",
+      "passed": true
+    },
+    {
+      "name": "energy-production-2-13",
+      "passed": true
+    },
+    {
+      "name": "error-mass-2-13",
+      "passed": true
+    },
+    {
+      "name": "error-dissipation-2-13",
+      "passed": true
+    },
+    {
+      "name": "pressure-energy-invariance-2-13",
+      "passed": true
+    },
+    {
+      "name": "mean-datum-solenoidal-2-13",
+      "passed": true
+    },
+    {
+      "name": "no-initial-low-modes-2-13",
+      "passed": true
+    },
+    {
+      "name": "generated-normal-mean-2-13",
+      "passed": true
+    },
+    {
+      "name": "unprojected-normal-zero-2-13",
+      "passed": true
+    },
+    {
+      "name": "projected-mean-solenoidal-2-13",
+      "passed": true
+    },
+    {
+      "name": "viscous-growth-positive-2",
+      "passed": true
+    },
+    {
+      "name": "growth-exceeds-envelope-2",
+      "passed": true
+    },
+    {
+      "name": "viscous-growth-positive-3",
+      "passed": true
+    },
+    {
+      "name": "growth-exceeds-envelope-3",
+      "passed": true
+    },
+    {
+      "name": "viscous-growth-positive-5",
+      "passed": true
+    },
+    {
+      "name": "growth-exceeds-envelope-5",
+      "passed": true
+    }
+  ],
+  "energy_formula": "(a*N-epsilon*(N^2+4*M^2+M^4/N^2))/(3+(M/N)^2)",
+  "normal_mean_formula": "-(a^2*M/6)*sin(M*x)*sin(M*y)*sin(2*M*z)",
+  "ROOT": "OPEN"
+}

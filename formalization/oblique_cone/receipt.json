@@ -1,0 +1,57 @@
+{
+  "standing": "RESTRICTED CONE ALGEBRA KERNEL-CHECKED; PDE and ODE application not formalized",
+  "compiler_version": "Lean (version 4.28.0, arm64-apple-darwin24.6.0, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b, Release)",
+  "mathlib_commit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "source_sha256": "b1c04ded30010b65de978338d484fe9170fea88202a1a91307bca55e4d88d1ab",
+  "object_sha256": "d35ec1fae6374023ace3eca739016ab8afbe7806fbfe17f1a71f658cb3263013",
+  "axiom_printout": "'Transformatics.ObliqueCone.full_conjugacy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Transformatics.ObliqueCone.basis_left_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Transformatics.ObliqueCone.basis_right_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Transformatics.ObliqueCone.cone_face_margins' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Transformatics.ObliqueCone.expanding_component' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "printed_axioms_allowed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proof_scope": [
+    "linear action conjugacy B0*S*Q=S*Q*D",
+    "two-sided inverse for coordinate basis S*Q",
+    "inward slope margins -23/48 and +23/48 assuming |Rij|<=1/12",
+    "expanding component rate>=13/24 assuming |z|<=1/2 and Xplus>=0"
+  ],
+  "not_formalized": [
+    "Gavrilov profile coefficient convergence",
+    "differentiated quotient and ODE cone invariance",
+    "periodic monodromy fixed point",
+    "localized Euler/NS high-frequency amplification",
+    "nonlinear feedback",
+    "infinite cascade",
+    "ROOT or E-prime"
+  ],
+  "integrated_source": "formalization/oblique_cone/NSEObliqueCone428.lean",
+  "official_compiler_archive": {
+    "url": "https://github.com/leanprover/lean4/releases/download/v4.28.0/lean-4.28.0-darwin_aarch64.tar.zst",
+    "size": 502221897,
+    "sha256": "61942f9d1907db918020154a517c87fb64841e48cebb0032fc0909df8d189a05",
+    "digest_matches": true
+  },
+  "checks": {
+    "compile_command": {
+      "exit_code": 0
+    },
+    "declaration_replay": {
+      "exit_code": 0,
+      "timed_out": false
+    },
+    "fresh_import_closure_replay": {
+      "exit_code": null,
+      "timed_out": true
+    },
+    "upstream_tube_compile": {
+      "exit_code": 1
+    },
+    "relocated_verification": {
+      "source_sha256": "b1c04ded30010b65de978338d484fe9170fea88202a1a91307bca55e4d88d1ab",
+      "source_unchanged": true,
+      "exit_code": 0
+    }
+  },
+  "path_handling": "Machine-specific paths omitted from this public copy; theorem source hashes and recorded outcomes are unchanged."
+}

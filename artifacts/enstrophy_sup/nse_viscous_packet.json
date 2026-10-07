@@ -1,0 +1,229 @@
+{
+  "stamp": "2026-09-08",
+  "node": "nse-viscous-packet-controls",
+  "root_status": "OPEN",
+  "E_prime_status": "OPEN",
+  "gso_route_status": "DEAD",
+  "evidence_class": "EXACT_LOCAL_ALGEBRA_AND_SCALING_CONTROLS_ONLY",
+  "pde_analytic_estimates_certified": false,
+  "lean_kernel_checked": false,
+  "dns_run": false,
+  "specific_profile_rates_computed": false,
+  "unconditional_NS_solution_proved": false,
+  "candidate_note": "references/navier-stokes/viscous-packet.md",
+  "packet": {
+    "checks": {
+      "nontrivial_incompressible_jet": true,
+      "nonzero_pressure_correction": true,
+      "transversality_preserved": true,
+      "actual_curl_is_solenoidal": true,
+      "curl_has_positive_leading_amplitude": true,
+      "direct_cartesian_pressure_residual_identity": true,
+      "arbitrary_envelope_euler_order_exactly_one": true,
+      "cubic_envelope_residual_nonzero_h_over_delta": true,
+      "cubic_residual_has_no_inverse_h_term": true,
+      "viscous_derivative_pairs_complete": true,
+      "negative_omitting_curl_correction_detected": true,
+      "negative_pressure_factor_one_detected": true,
+      "missing_pressure_leaves_leading_parallel_error": true
+    },
+    "jet": "[[1, 2, 0], [0, -1, 1], [1, 0, 0]]",
+    "covector": [
+      1,
+      2,
+      3
+    ],
+    "polarization": [
+      2,
+      -1,
+      0
+    ],
+    "polynomial_envelope": "1 + x/delta + 2*y/delta - z/delta + (x**2 + x*y + 3*x*z + 2*y*z)/delta**2 + (x**3 + x*y*z + y**3 + z**3)/delta**3",
+    "cubic_origin_residual": [
+      "92*I*h/(49*delta)",
+      "94*I*h/(49*delta)",
+      "-8*I*h/(7*delta)"
+    ],
+    "euler_residual": [
+      "I*h*(252*Derivative(f(x, y, z), x) - 57*Derivative(f(x, y, z), y) - 46*Derivative(f(x, y, z), z))/98",
+      "I*h*(Derivative(f(x, y, z), x) + 70*Derivative(f(x, y, z), y) - 47*Derivative(f(x, y, z), z))/98",
+      "I*h*(46*Derivative(f(x, y, z), x) - 65*Derivative(f(x, y, z), y) + 28*Derivative(f(x, y, z), z))/98"
+    ],
+    "laplacian_h_power_and_envelope_order": [
+      [
+        -2,
+        0
+      ],
+      [
+        -1,
+        "1"
+      ],
+      [
+        0,
+        "2"
+      ],
+      [
+        1,
+        "3"
+      ]
+    ],
+    "scope": "Local differential identities and derivative counts only; no global PDE estimates or compact profile certified."
+  },
+  "energy": {
+    "checks": {
+      "three_control_velocities_solenoidal": true,
+      "full_quadratic_subtraction_identity": true,
+      "three_transport_energy_pairings_vanish": true,
+      "strain_pairing_does_not_cancel": true,
+      "only_symmetric_gradient_enters_energy": true,
+      "negative_compressible_transport_detected": true,
+      "H3_bootstrap_scalar_margin": true,
+      "forcing_sign_after_moving_to_RHS": true,
+      "negative_reversed_quadratic_forcing_detected": true
+    },
+    "exact_transport_means": {
+      "v": "0",
+      "w": "0",
+      "e": "0"
+    },
+    "stretching_mean": "3/4",
+    "compressible_control_mean": "-1/2",
+    "scope": "Exact periodic algebra/energy cancellations and scalar bootstrap identity; no Sobolev or existence theorem certified."
+  },
+  "scaling": {
+    "checks": {
+      "physical_equation_viscosity": true,
+      "physical_time_factor": true,
+      "physical_frequency_threshold": true,
+      "physical_averaged_L2_factor": true,
+      "physical_initial_seed_power_seven": true,
+      "old_target_power_eleven_tenths": true,
+      "viscous_principal_power_two": true,
+      "background_principal_power_three": true,
+      "balanced_coherence_and_envelope": true,
+      "normalized_L2_has_no_extra_volume_loss": true,
+      "all_initial_H3_correction_powers_bounded": true,
+      "all_viscous_raw_powers_bounded_by_h_minus_two": true,
+      "linear_epsilon_exponent_floors": true,
+      "logarithmic_exponential_sign": true,
+      "negative_reversed_exponent_detected": true,
+      "fixed_H3_initial_smallness": true,
+      "quadratic_forcing_H3_H1_power": true,
+      "nonlinear_remainder_div_eta_power_two": true,
+      "H8_background_is_smaller_than_seed": true,
+      "H3_bootstrap_boundary_margin": true,
+      "small_linear_gradient_boundary_margin": true,
+      "nonlinear_error_boundary_margin": true,
+      "old_target_excluded_by_actual_upper_bound": true,
+      "illustrative_c_obeys_all_strict_bounds": true,
+      "illustrative_exponents_all_positive": true
+    },
+    "linear_epsilon_exponents": [
+      "-Gamma/(16*Gamma + 16*kappa) + 1/8",
+      "-Gamma/(16*Gamma + 16*kappa) + 1/8",
+      "-Gamma/(16*Gamma + 16*kappa) + 1/2",
+      "-(Gamma + kappa)/(16*Gamma + 16*kappa) + 3/4"
+    ],
+    "linear_floor_margins": [
+      "kappa/(16*(Gamma + kappa))",
+      "kappa/(16*(Gamma + kappa))",
+      "kappa/(16*(Gamma + kappa))",
+      "0"
+    ],
+    "illustrative_rates_not_profile_certificates": {
+      "gamma": "17",
+      "kappa": "23",
+      "Kn": "5",
+      "K3": "7",
+      "Ke": "31"
+    },
+    "illustrative_c": "1/1280",
+    "illustrative_h_exponents": {
+      "spatial_coherence": "143/320",
+      "Euler_envelope": "143/320",
+      "viscosity": "623/320",
+      "background": "23/8",
+      "H3_perturbation": "191/64",
+      "eta_grad_linear": "953/320",
+      "nonlinear_error_div_eta": "609/320",
+      "physical_perturbation_highpass_upper": "447/64"
+    },
+    "strict_constraint_boundary_exponents": {
+      "H3": "3/2",
+      "eta_grad": "3/2",
+      "error_div_eta": "1",
+      "physical_highpass": "11/2"
+    },
+    "physical_L2_factor": "h/(2*pi)^(3/2), for unnormalized rescaled L2",
+    "actual_old_target_exclusion": "Physical highpass <= C_nu*(h^9+h^(7-4*c*Kn)); 7-4*c*Kn>11/2>11/10. Conditional on the analytic H3 bootstrap, this excludes the actual old target throughout the window.",
+    "scope": "Exact exponent implications of stated analytic estimates; illustrative rates are not bounds for the frozen profile."
+  },
+  "real_normalization": {
+    "checks": {
+      "real_imag_squared_norm_identity": true,
+      "half_mass_plus_oscillation_identity": true,
+      "IBP_carrier_factor_h": true,
+      "IBP_boundary_witness_vanishes": true,
+      "IBP_envelope_derivative_cost": true,
+      "quadrature_lower_norm_one_half": true
+    },
+    "scope": "Quadrature and one-IBP algebra only. Uniform real mass uses the note's L1/L2 envelope estimates. Real selection is for one prescribed final time, with two signed Fourier lobes."
+  },
+  "checks": {
+    "packet.nontrivial_incompressible_jet": true,
+    "packet.nonzero_pressure_correction": true,
+    "packet.transversality_preserved": true,
+    "packet.actual_curl_is_solenoidal": true,
+    "packet.curl_has_positive_leading_amplitude": true,
+    "packet.direct_cartesian_pressure_residual_identity": true,
+    "packet.arbitrary_envelope_euler_order_exactly_one": true,
+    "packet.cubic_envelope_residual_nonzero_h_over_delta": true,
+    "packet.cubic_residual_has_no_inverse_h_term": true,
+    "packet.viscous_derivative_pairs_complete": true,
+    "packet.negative_omitting_curl_correction_detected": true,
+    "packet.negative_pressure_factor_one_detected": true,
+    "packet.missing_pressure_leaves_leading_parallel_error": true,
+    "energy.three_control_velocities_solenoidal": true,
+    "energy.full_quadratic_subtraction_identity": true,
+    "energy.three_transport_energy_pairings_vanish": true,
+    "energy.strain_pairing_does_not_cancel": true,
+    "energy.only_symmetric_gradient_enters_energy": true,
+    "energy.negative_compressible_transport_detected": true,
+    "energy.H3_bootstrap_scalar_margin": true,
+    "energy.forcing_sign_after_moving_to_RHS": true,
+    "energy.negative_reversed_quadratic_forcing_detected": true,
+    "scaling.physical_equation_viscosity": true,
+    "scaling.physical_time_factor": true,
+    "scaling.physical_frequency_threshold": true,
+    "scaling.physical_averaged_L2_factor": true,
+    "scaling.physical_initial_seed_power_seven": true,
+    "scaling.old_target_power_eleven_tenths": true,
+    "scaling.viscous_principal_power_two": true,
+    "scaling.background_principal_power_three": true,
+    "scaling.balanced_coherence_and_envelope": true,
+    "scaling.normalized_L2_has_no_extra_volume_loss": true,
+    "scaling.all_initial_H3_correction_powers_bounded": true,
+    "scaling.all_viscous_raw_powers_bounded_by_h_minus_two": true,
+    "scaling.linear_epsilon_exponent_floors": true,
+    "scaling.logarithmic_exponential_sign": true,
+    "scaling.negative_reversed_exponent_detected": true,
+    "scaling.fixed_H3_initial_smallness": true,
+    "scaling.quadratic_forcing_H3_H1_power": true,
+    "scaling.nonlinear_remainder_div_eta_power_two": true,
+    "scaling.H8_background_is_smaller_than_seed": true,
+    "scaling.H3_bootstrap_boundary_margin": true,
+    "scaling.small_linear_gradient_boundary_margin": true,
+    "scaling.nonlinear_error_boundary_margin": true,
+    "scaling.old_target_excluded_by_actual_upper_bound": true,
+    "scaling.illustrative_c_obeys_all_strict_bounds": true,
+    "scaling.illustrative_exponents_all_positive": true,
+    "real_normalization.real_imag_squared_norm_identity": true,
+    "real_normalization.half_mass_plus_oscillation_identity": true,
+    "real_normalization.IBP_carrier_factor_h": true,
+    "real_normalization.IBP_boundary_witness_vanishes": true,
+    "real_normalization.IBP_envelope_derivative_cost": true,
+    "real_normalization.quadrature_lower_norm_one_half": true
+  },
+  "all_green": true,
+  "claim_boundary": "These finite exact controls support review of a supplied-seed finite-time estimate. They do not certify its analytic hypotheses, global PDE estimates, full formalization, original activation target, infinite cascade, blow-up, or regularity."
+}

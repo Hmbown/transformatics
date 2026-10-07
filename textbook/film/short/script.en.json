@@ -1,0 +1,84 @@
+{
+ "title": "Two forced Navier–Stokes results",
+ "language": "en",
+ "voice": "en-US-GuyNeural",
+ "scenes": [
+  {
+   "id": "intro",
+   "lead": 0.3,
+   "tail": 0.3,
+   "beats": [
+    {
+     "say": "OpenAI has released two results about the Navier Stokes equations. Both use a deliberately chosen force.",
+     "cap": "OpenAI has released two results about the Navier–Stokes equations. Both use a deliberately chosen force."
+    }
+   ]
+  },
+  {
+   "id": "blowup",
+   "lead": 0.15,
+   "tail": 0.3,
+   "beats": [
+    {
+     "say": "In the first, the force stays smooth while the fluid's peak speed becomes unbounded in finite time.",
+     "cap": "In the first, the force stays smooth while the fluid’s peak speed becomes unbounded in finite time."
+    }
+   ]
+  },
+  {
+   "id": "energy",
+   "lead": 0.15,
+   "tail": 0.3,
+   "beats": [
+    {
+     "say": "The fast region contracts enough for the total energy to stay bounded.",
+     "cap": "The fast region contracts enough for the total energy to stay bounded."
+    }
+   ]
+  },
+  {
+   "id": "force",
+   "lead": 0.15,
+   "tail": 0.3,
+   "beats": [
+    {
+     "say": "The force supplies energy. With no force and a fluid initially at rest, the fluid stays at rest.",
+     "cap": "The force supplies energy. With no force and a fluid initially at rest, the fluid stays at rest."
+    }
+   ]
+  },
+  {
+   "id": "compute",
+   "lead": 0.15,
+   "tail": 0.3,
+   "beats": [
+    {
+     "say": "For the second result, imagine a program that starts at zero, adds one twice, and stops. Assign each state a position. Moving a particle between those positions represents running the program.",
+     "cap": "For the second result, imagine a program that starts at zero, adds one twice, and stops. Assign each state a position. Moving a particle between those positions represents running the program."
+    }
+   ]
+  },
+  {
+   "id": "halt",
+   "lead": 0.15,
+   "tail": 0.3,
+   "beats": [
+    {
+     "say": "The papers build a smooth force that makes a particle follow an arbitrary machine's instructions. Entering a marked box means the machine has stopped. Deciding whether it ever enters would decide whether the program halts. No algorithm can decide that for every program.",
+     "cap": "The papers build a smooth force that makes a particle follow an arbitrary machine’s instructions. Entering a marked box means the machine has stopped. Deciding whether it ever enters would decide whether the program halts. No algorithm can decide that for every program."
+    }
+   ]
+  },
+  {
+   "id": "open",
+   "lead": 0.15,
+   "tail": 2,
+   "beats": [
+    {
+     "say": "For general smooth initial data, whether a three-dimensional flow stays smooth without any force is still open.",
+     "cap": "For general smooth initial data, whether a three-dimensional flow stays smooth without any force is still open."
+    }
+   ]
+  }
+ ]
+}

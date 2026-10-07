@@ -1,0 +1,100 @@
+{
+  "stamp": "2026-09-08",
+  "node": "nse-gavrilov-oblique-instability",
+  "root_status": "OPEN",
+  "E_prime_status": "OPEN",
+  "gso_route_status": "DEAD",
+  "evidence_class": "WRITTEN_ANALYTIC_EXISTENCE_PROOF_FOR_INVISCID_POLARIZATION_ODE_WITH_EXACT_ALGEBRA_PINS",
+  "dns_run": false,
+  "specific_j_computed": false,
+  "full_NS_amplification_proved": false,
+  "lean_kernel_checked": false,
+  "limit": {
+    "checks": {
+      "trace_free_full_gradient": true,
+      "orthonormal_frame_rate_skew": true,
+      "returning_covector_in_frame": true,
+      "plane_constraint": true,
+      "plane_chart_inverse": true,
+      "full_generator_preserves_plane": true,
+      "pressure_corrected_reduction": true,
+      "diagonalization": true,
+      "squared_generator": true,
+      "nonzero_vorticity_covector_invariant": true,
+      "pressure_restores_plane_constraint": true
+    },
+    "gradient": "Matrix([[0, -1, 0], [-1, 0, 0], [-sqrt(2)/2, 0, 0]])",
+    "frame_rate": "Matrix([[0, -1, 0], [1, 0, 0], [0, 0, 0]])",
+    "covector": "Matrix([[0], [-sqrt(2)/2], [2]])",
+    "polarization_matrix": "Matrix([[0, -8/9], [-1/2, 0]])",
+    "eigenvalues": [
+      "2/3",
+      "-2/3"
+    ],
+    "one_poloid_limit_multipliers": [
+      "exp(4*pi/3)",
+      "exp(-4*pi/3)"
+    ],
+    "vorticity_covector_pairing": "-1/2"
+  },
+  "asymptotics": {
+    "checks": {
+      "Omega1_limit": true,
+      "r_squared_Omega1prime_limit": true,
+      "r_Omega2prime_limit": true,
+      "zeta_sigma_over_r_limit": true
+    },
+    "leading_limits": {
+      "Omega1_limit": "1",
+      "r_squared_Omega1prime_limit": "-2",
+      "r_Omega2prime_limit": "-sqrt(2)/2",
+      "zeta_sigma_over_r_limit": "-sqrt(2)/2"
+    },
+    "scope": "Formal leading-jet algebra only. Uniform differentiated remainder control uses the cited analytic coordinate theorem in the written proof."
+  },
+  "cone": {
+    "checks": {
+      "all_box_vertices_inward": true,
+      "lower_face_margin": true,
+      "upper_face_margin": true,
+      "uniform_growth_floor": true,
+      "growth_strictly_above_half": true
+    },
+    "error_entry_bound": "1/12",
+    "slope_radius": "1/2",
+    "lower_face_margin": "23/48",
+    "upper_face_margin": "-23/48",
+    "growth_rate_lower": "13/24",
+    "periodic_multiplier_lower": "exp(13*pi/12)",
+    "scope": "The four uncertain entries enter each face affinely; checking all 16 rational vertices certifies the full box. The cone invariance and fixed-point eigenvector argument are written separately."
+  },
+  "checks": {
+    "limit.trace_free_full_gradient": true,
+    "limit.orthonormal_frame_rate_skew": true,
+    "limit.returning_covector_in_frame": true,
+    "limit.plane_constraint": true,
+    "limit.plane_chart_inverse": true,
+    "limit.full_generator_preserves_plane": true,
+    "limit.pressure_corrected_reduction": true,
+    "limit.diagonalization": true,
+    "limit.squared_generator": true,
+    "limit.nonzero_vorticity_covector_invariant": true,
+    "limit.pressure_restores_plane_constraint": true,
+    "asymptotics.Omega1_limit": true,
+    "asymptotics.r_squared_Omega1prime_limit": true,
+    "asymptotics.r_Omega2prime_limit": true,
+    "asymptotics.zeta_sigma_over_r_limit": true,
+    "cone.all_box_vertices_inward": true,
+    "cone.lower_face_margin": true,
+    "cone.upper_face_margin": true,
+    "cone.uniform_growth_floor": true,
+    "cone.growth_strictly_above_half": true
+  },
+  "all_green": true,
+  "claim_boundary": "For all sufficiently large selected rational tori and specified compact pressure cutoffs, the actual Gavrilov inviscid polarization ODE has an expanding oblique Floquet multiplier. Smallness threshold is existential, not numerically computed. No finite-wavelength NS activation, infinite cascade, novel-priority, or regularity claim.",
+  "remaining_estimate": "Freeze one unstable profile; prove a localized finite-wavelength comparison with the actual viscous NS background, tracking pressure, phase, damping, seed amplitude and nonlinear error on the logarithmic interval.",
+  "sources": [
+    "https://arxiv.org/html/1810.08020v1",
+    "https://arxiv.org/html/2302.02982v1"
+  ]
+}

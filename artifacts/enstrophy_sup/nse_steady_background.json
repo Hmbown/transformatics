@@ -1,0 +1,73 @@
+{
+  "stamp": "2026-09-08",
+  "node": "nse-steady-background-local",
+  "root_status": "OPEN",
+  "E_prime_status": "OPEN",
+  "gso_route_status": "DEAD",
+  "evidence_class": "WRITTEN_CLASSICAL_PDE_COMPARISON_AND_RESTRICTED_ODE_PROOF_WITH_SYMBOLIC_PINS",
+  "dns_run": false,
+  "compact_profile_computed": false,
+  "oblique_Floquet_map_computed": false,
+  "scaling": {
+    "checks": {
+      "physical_mean_L2_normalization": true,
+      "rescaled_viscosity": true,
+      "nonlinear_rescaling_factor": true,
+      "turnover_power": true,
+      "small_viscosity_power": true,
+      "inviscid_covector_damping_power": true
+    },
+    "scope": "Exact rescaling and feasibility exponents; no amplitude or iteration theorem."
+  },
+  "bootstrap": {
+    "checks": {
+      "comparison_initial_zero": true,
+      "comparison_differential_equation": true,
+      "strict_bootstrap_endpoint": true,
+      "comparison_increasing": true
+    },
+    "bound": "F*eps*(exp(kappa*t) - 1)/kappa",
+    "bootstrap_time": "log(1 + kappa*r/(2*F*eps))/kappa",
+    "scope": "The uniform Hs energy inequality and strong continuation are proved in the note, not certified by this scalar check."
+  },
+  "ode": {
+    "checks": {
+      "pressure_normal_admissible": true,
+      "steady_acceleration_is_pressure": true,
+      "velocity_is_polarization_solution": true,
+      "polarization_constraint_preserved": true,
+      "plane_trace_is_log_covector_loss": true,
+      "cotangent_return_formula": true
+    },
+    "pressure_normal_rhs": "Matrix([[-q], [0], [0]])",
+    "plane_trace": "(a0*x0**2 - a0*x2**2 + a1*x0*x1 + a2*x0*x2 + a3*x0*x1 + a4*x1**2 - a4*x2**2 + a5*x1*x2 + a6*x0*x2 + a7*x1*x2)/(x0**2 + x1**2 + x2**2)",
+    "return_condition": "Omega'(I).zeta_theta=0 for a closed orbit of positive period",
+    "scope": "ODE identities only. Unit multipliers for the pressure-normal periodic carrier follow from the written determinant argument. No oblique Floquet spectrum computed."
+  },
+  "checks": {
+    "scaling.physical_mean_L2_normalization": true,
+    "scaling.rescaled_viscosity": true,
+    "scaling.nonlinear_rescaling_factor": true,
+    "scaling.turnover_power": true,
+    "scaling.small_viscosity_power": true,
+    "scaling.inviscid_covector_damping_power": true,
+    "bootstrap.comparison_initial_zero": true,
+    "bootstrap.comparison_differential_equation": true,
+    "bootstrap.strict_bootstrap_endpoint": true,
+    "bootstrap.comparison_increasing": true,
+    "ode.pressure_normal_admissible": true,
+    "ode.steady_acceleration_is_pressure": true,
+    "ode.velocity_is_polarization_solution": true,
+    "ode.polarization_constraint_preserved": true,
+    "ode.plane_trace_is_log_covector_loss": true,
+    "ode.cotangent_return_formula": true
+  },
+  "all_green": true,
+  "sources": [
+    "https://arxiv.org/html/1810.08020v1",
+    "https://arxiv.org/html/1903.11699v1",
+    "https://arxiv.org/html/2302.02982v1"
+  ],
+  "claim_boundary": "Fixed-profile NS backgrounds persist for logarithmically many rescaled turnovers; the pressure-normal periodic inviscid carrier has unit multipliers. No high-seed amplification, finite-wavelength validation, novel theorem, infinite cascade, or ROOT closure.",
+  "remaining_estimate": "Analyze returning oblique covectors on one specified compact steady Euler orbit before a viscous localized-wave amplification attempt."
+}

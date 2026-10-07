@@ -1,0 +1,269 @@
+{
+  "DNS": false,
+  "Lean_kernel_checked": false,
+  "PDE_theorem_certified": false,
+  "ROOT": "OPEN",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "arbitrary-gradient-trace-free",
+      "passed": true
+    },
+    {
+      "name": "primary-frame-skew",
+      "passed": true
+    },
+    {
+      "name": "receiving-lift-transverse",
+      "passed": true
+    },
+    {
+      "name": "exact-cotangent-triangular-frame",
+      "passed": true
+    },
+    {
+      "name": "full-shear-entry-11",
+      "passed": true
+    },
+    {
+      "name": "full-shear-entry-12",
+      "passed": true
+    },
+    {
+      "name": "full-shear-entry-21",
+      "passed": true
+    },
+    {
+      "name": "full-shear-entry-22",
+      "passed": true
+    },
+    {
+      "name": "K21-complete-pressure-numerator",
+      "passed": true
+    },
+    {
+      "name": "K21-independent-of-shear",
+      "passed": true
+    },
+    {
+      "name": "K21-a32-cancellation",
+      "passed": true
+    },
+    {
+      "name": "K22-a32-cancellation",
+      "passed": true
+    },
+    {
+      "name": "K22-no-a32-w-cubed",
+      "passed": true
+    },
+    {
+      "name": "negative-control-pressure-one-breaks-shear",
+      "passed": true
+    },
+    {
+      "name": "negative-control-pressure-one-breaks-a32-cancellation",
+      "passed": true
+    },
+    {
+      "name": "negative-control-frame-sign-breaks-K21",
+      "passed": true
+    },
+    {
+      "name": "frozen-inner-entry-11",
+      "passed": true
+    },
+    {
+      "name": "frozen-inner-entry-12",
+      "passed": true
+    },
+    {
+      "name": "frozen-inner-entry-21",
+      "passed": true
+    },
+    {
+      "name": "frozen-inner-entry-22",
+      "passed": true
+    },
+    {
+      "name": "positive-connection-full-conjugation",
+      "passed": true
+    },
+    {
+      "name": "positive-kernel-decomposition",
+      "passed": true
+    },
+    {
+      "name": "general-Volterra-kernel-moment",
+      "passed": true
+    },
+    {
+      "name": "thin-Volterra-kernel-moment",
+      "passed": true
+    },
+    {
+      "name": "exact-centered-third-curl-derivative",
+      "passed": true
+    },
+    {
+      "name": "negative-control-third-leading-sign",
+      "passed": true
+    },
+    {
+      "details": {
+        "ell": "11/8",
+        "h": "-3"
+      },
+      "name": "third-derivative-leading-powers",
+      "passed": true
+    },
+    {
+      "details": {
+        "ell": "-3",
+        "h": "1"
+      },
+      "name": "third-curl-error-margin-1",
+      "passed": true
+    },
+    {
+      "details": {
+        "ell": "-3",
+        "h": "3/4"
+      },
+      "name": "third-curl-error-margin-2",
+      "passed": true
+    },
+    {
+      "details": {
+        "ell": "-2",
+        "h": "1/2"
+      },
+      "name": "third-curl-error-margin-3",
+      "passed": true
+    },
+    {
+      "details": {
+        "ell": "-3",
+        "h": "1"
+      },
+      "name": "third-curl-error-margin-4",
+      "passed": true
+    },
+    {
+      "details": {
+        "ell": "-1",
+        "h": "1/2"
+      },
+      "name": "third-curl-error-margin-5",
+      "passed": true
+    },
+    {
+      "details": {
+        "ell": "-2",
+        "h": "3/4"
+      },
+      "name": "third-curl-error-margin-6",
+      "passed": true
+    },
+    {
+      "name": "full-corrected-residual-exponent",
+      "passed": true
+    },
+    {
+      "name": "packet-L2-exponent",
+      "passed": true
+    },
+    {
+      "name": "packet-H12-exponent",
+      "passed": true
+    },
+    {
+      "name": "H12-GN-gradient-positive-margin",
+      "passed": true
+    },
+    {
+      "name": "H12-GN-velocity-margin",
+      "passed": true
+    },
+    {
+      "name": "velocity-error-smaller-than-wavelength",
+      "passed": true
+    },
+    {
+      "name": "negative-control-omitted-correction-fails-C1",
+      "passed": true
+    },
+    {
+      "name": "principal-viscous-residual-exponent",
+      "passed": true
+    },
+    {
+      "name": "mean-viscous-residual-exponent",
+      "passed": true
+    },
+    {
+      "name": "harmonic-viscous-residual-exponent",
+      "passed": true
+    },
+    {
+      "name": "growing-inner-overlap-exponent",
+      "passed": true
+    },
+    {
+      "name": "weighted-inner-perturbation-smallness",
+      "passed": true
+    },
+    {
+      "name": "frozen-connection-tail-smallness",
+      "passed": true
+    },
+    {
+      "name": "outer-remainder-smallness",
+      "passed": true
+    },
+    {
+      "name": "nonlinear-history-subpower-room",
+      "passed": true
+    },
+    {
+      "name": "initial-strain-exponent",
+      "passed": true
+    },
+    {
+      "name": "terminal-normal-strain-exponent",
+      "passed": true
+    },
+    {
+      "name": "terminal-tangent-strain-exponent",
+      "passed": true
+    },
+    {
+      "name": "fixed-physical-viscosity-scaling",
+      "passed": true
+    },
+    {
+      "name": "physical-third-derivative-h-exponent",
+      "passed": true
+    },
+    {
+      "name": "physical-first-derivative-h-exponent",
+      "passed": true
+    },
+    {
+      "name": "C3-attenuation-kills-this-handover",
+      "passed": true
+    }
+  ],
+  "checks_passed": 55,
+  "checks_total": 55,
+  "date": "2026-09-08",
+  "evidence_class": "EXACT_ALGEBRA_AND_EXPONENT_CONTROLS_ONLY",
+  "growing_interval_matching_certified": false,
+  "infinite_iteration_certified": false,
+  "node": "nse-original-time-nonlinear-handover",
+  "research_note": "references/navier-stokes/original-nonlinear-handover.md",
+  "scope": "Original-time handover supporting identities and rational powers",
+  "source_sha256": "da8664698544e6b88d850981c5390b231fb5fde152c4bb5abed9a913a8bdd5a0",
+  "strong_existence_certified": false,
+  "written_PDE_proof_separate": true
+}

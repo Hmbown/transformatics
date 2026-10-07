@@ -1,0 +1,52 @@
+name: Textbook checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: textbook-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  textbook:
+    name: Build and check the textbook
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: |
+            textbook/requirements.txt
+            tests/requirements.txt
+            pyproject.toml
+
+      - name: Install the book and test dependencies
+        run: |
+          python -m pip install --disable-pip-version-check \
+            --requirement textbook/requirements.txt \
+            --requirement tests/requirements.txt \
+            numpy sympy
+
+      - name: Build the textbook with link, claim and source-hash checks
+        run: python scripts/build_textbook.py
+
+      - name: Check the publication and finite mathematical examples
+        run: python -m pytest -q
+
+      - name: Run the fluid simulator self-tests
+        run: node textbook/assets/fluid/checks.js
+
+      - name: Check film formulas
+        run: node textbook/film/checks.mjs

@@ -1,0 +1,96 @@
+.fluid-lab {
+  margin: 2rem 0;
+  border: 1px solid var(--line, #bcc5c8);
+  overflow: hidden;
+}
+.fluid-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding: 1rem;
+  align-items: end;
+}
+.fluid-controls label {
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+}
+.fluid-controls select,
+.fluid-controls input,
+.fluid-controls button {
+  font: inherit;
+  min-height: 44px;
+  padding: 0.45rem 0.7rem;
+  color: var(--ink, #18292d);
+  background: var(--paper, #fff);
+  border: 1px solid var(--line, #bac3c8);
+  border-radius: 0;
+}
+.fluid-controls input {
+  width: 7rem;
+}
+.fluid-controls button {
+  cursor: pointer;
+}
+.fluid-controls button:disabled {
+  color: var(--muted, #526168);
+  background: var(--paper, #fff);
+  border-color: var(--line, #bac3c8);
+  opacity: 1;
+  cursor: not-allowed;
+}
+.fluid-controls :focus-visible {
+  outline: 3px solid #3b91af;
+  outline-offset: 2px;
+}
+.fluid-lab canvas {
+  display: block;
+  width: 100%;
+  height: 420px;
+  max-height: 65vh;
+  background: #101e27;
+}
+.fluid-diagnostics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  padding: 1rem;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.fluid-diagnostics div {
+  min-width: 0;
+}
+.fluid-diagnostics dt {
+  font-size: 0.78rem;
+}
+.fluid-diagnostics dd {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.fluid-status {
+  padding: 0 1rem 1rem;
+  margin: 0;
+  font-size: 0.85rem;
+}
+@media (max-width: 520px) {
+  .fluid-controls {
+    gap: 0.6rem;
+  }
+  .fluid-controls label {
+    flex: 1 1 120px;
+  }
+  .fluid-controls select {
+    width: 100%;
+  }
+  .fluid-diagnostics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .fluid-lab canvas {
+    height: 330px;
+  }
+}
+
+@media (max-width: 520px) {
+  .fluid-controls label:first-child { flex-basis: 100%; }
+}

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build the reviewed Markdown textbook; validate its navigation and claim graph.
+"""Build the reviewed Markdown learning notes; validate its navigation and claim graph.
 
-Requires the pinned package in textbook/requirements.txt. No network at build time.
-Writes textbook/_site; --update-claim-index also refreshes textbook/claims.md.
+Requires the pinned package in notes/requirements.txt. No network at build time.
+Writes notes/_site; --update-claim-index also refreshes notes/claims.md.
 Run from any working directory.
 """
 from pathlib import Path
@@ -17,9 +17,9 @@ from urllib.parse import urlsplit, unquote
 import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
-BOOK = ROOT / 'textbook'
+BOOK = ROOT / 'notes'
 OUT = BOOK / '_site'
-META = json.loads((BOOK / 'book.json').read_text())
+META = json.loads((BOOK / 'notes.json').read_text())
 REGISTRY = json.loads((BOOK / 'claims.json').read_text())
 COURSE = json.loads((BOOK / 'course-outline.json').read_text())
 CHAPTERS = META['chapters']
@@ -34,7 +34,7 @@ def claim_markdown():
     """A GitHub-readable view of the same claim registry used by the website."""
     lines = ['# Claim register', '',
              'Generated from [claims.json](claims.json); edit that source and run '
-             '`python scripts/build_textbook.py --update-claim-index`. The '
+             '`python scripts/build_notes.py --update-claim-index`. The '
              'linked source records state the scope of each result.', '']
     lines += [REGISTRY['review_semantics'], '']
     lines += [REGISTRY['verification_label_semantics'], '']
@@ -153,7 +153,7 @@ def page(slug, title, content, index=None):
 </head><body><a class="skip" href="#main">Skip to chapter</a>
 <header class="site-header"><p><a class="brand" href="index.html">Transformatics</a></p>
 <nav class="site-links" aria-label="Site navigation"><a href="index.html">Home</a><a href="search.html">Search</a><a href="simulator.html">3D fluid lab</a><a href="glossary.html">Glossary</a><a href="claims.html">Claims</a><button class="theme" type="button">Change appearance</button></nav>
-<details class="book-contents" id="contents"><summary>All chapters</summary><nav aria-label="Textbook contents"><ol>{''.join(links)}</ol></nav></details></header>
+<details class="book-contents" id="contents"><summary>All chapters</summary><nav aria-label="Learning notes contents"><ol>{''.join(links)}</ol></nav></details></header>
 <div class="layout"><div class="masthead">{source_link} · <span class="edition">{escape(META['edition'])}</span></div><main id="main" tabindex="-1"><article>{content}</article>{pager}</main><footer><a href="credits.html">Authors and credits</a> · <a href="references.html">References</a> · <a href="course.json">Course JSON</a> · <a href="all-chapters.md">Complete Markdown</a> · <a href="LICENSE.txt">License</a><br>Equations use MathJax 3.2.2; the source notation remains readable offline. Print includes exercise solutions.</footer></div>
 </body></html>'''
 
@@ -252,8 +252,8 @@ def build(update_claim_index=False):
     (OUT/'all-chapters.md').write_text('\n\n---\n\n'.join(complete))
     shutil.copy2(ROOT/'LICENSE', OUT/'LICENSE.txt')
     if (ROOT/'CITATION.cff').is_file(): shutil.copy2(ROOT/'CITATION.cff', OUT/'CITATION.cff')
-    (OUT/'llms.txt').write_text('# Transformatics\n\nOpen textbook: finite change, evolution, and transfer between models.\n\n- [Course, prerequisites, objectives, sections, solutions and source hashes](course.json)\n- [All chapters in Markdown](all-chapters.md)\n- [Scoped research claims and source hashes](claims.json)\n- [Attribution and provenance](credits.html)\n- [References](references.html)\n\nThe course manifest is a reading index, not a proof certificate. Imported external results and this project\'s finite research claims have separate evidence records.\n')
-    (OUT/'search.html').write_text(page('search','Search the textbook','''<h1>Search the textbook</h1><p>Find a definition, example or exercise. Search runs in your browser.</p><label for="book-search">Words or a phrase</label><input id="book-search" type="search" placeholder="e.g. pressure, finite difference, smooth force" style="display:block;width:100%;margin:10px 0;padding:8px"><p id="search-status" role="status">Enter a search term.</p><ol id="search-results"></ol><noscript><p>Search requires JavaScript. Use <a href="glossary.html">the glossary</a> or your browser's Find command in <a href="all-chapters.md">the complete Markdown book</a>.</p></noscript>'''))
+    (OUT/'llms.txt').write_text('# Transformatics\n\nOpen learning notes: finite change, evolution, and transfer between models.\n\n- [Course, prerequisites, objectives, sections, solutions and source hashes](course.json)\n- [All chapters in Markdown](all-chapters.md)\n- [Scoped research claims and source hashes](claims.json)\n- [Attribution and provenance](credits.html)\n- [References](references.html)\n\nThe course manifest is a reading index, not a proof certificate. Imported external results and this project\'s finite research claims have separate evidence records.\n')
+    (OUT/'search.html').write_text(page('search','Search the learning notes','''<h1>Search the learning notes</h1><p>Find a definition, example or exercise. Search runs in your browser.</p><label for="book-search">Words or a phrase</label><input id="book-search" type="search" placeholder="e.g. pressure, finite difference, smooth force" style="display:block;width:100%;margin:10px 0;padding:8px"><p id="search-status" role="status">Enter a search term.</p><ol id="search-results"></ol><noscript><p>Search requires JavaScript. Use <a href="glossary.html">the glossary</a> or your browser's Find command in <a href="all-chapters.md">the complete Markdown notes</a>.</p></noscript>'''))
     (OUT/'claims.html').write_text(page('claims','A register of claims',claim_html()))
     # Snapshot the primary reading sources, preserving their repository-relative paths.
     # Linked companion pins are included so the Markdown stays useful after download.
@@ -264,7 +264,7 @@ def build(update_claim_index=False):
         if source in copied: continue
         if not source.is_relative_to(ROOT): continue
         if not source.is_file():
-            raise FileNotFoundError(f'Missing textbook source: {relative}')
+            raise FileNotFoundError(f'Missing learning notes source: {relative}')
         target = OUT/'source'/source.relative_to(ROOT)
         target.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(source,target); copied.add(source)
         if source.suffix == '.md':

@@ -1,4 +1,4 @@
-# Where this book meets the literature
+# Connections to the literature
 
 A new course is easier to judge when its debts are visible. The word
 *Transformatics* supplies an organizing viewpoint; the mathematical subjects
@@ -86,7 +86,7 @@ OpenAI's [*Finite time blowup for Navier–Stokes*](https://cdn.openai.com/pdf/3
 and [public formalization](https://github.com/openai/NavierStokesAndEuler/tree/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538)
 are the external sources for [the published-proof chapter](published-proof.md).
 The [source record](../../references/navier-stokes/openai-result-bridge.md) pins
-versions and states what was inspected. This book teaches selected underlying
+versions and states what was inspected. These notes explain selected underlying
 operations through independent examples. It does not substitute for reading
 the full research proof.
 

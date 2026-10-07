@@ -1,7 +1,7 @@
 # Reading the sources
 
 Start with a chapter and follow its links to the argument it uses. The
-[claim register](../textbook/claims.md) records the scope, dependencies, source
+[claim register](../notes/claims.md) records the scope, dependencies, source
 files, and corrections for each selected result. Its JSON version pins source
 hashes; the website builder checks those hashes and all local links.
 
@@ -18,5 +18,5 @@ before the publication cleanup of filenames and links. The claim register and
 publication inventory record the current files' hashes.
 
 Classical sources and OpenAI's externally authored results remain credited where
-they are used. See the [literature guide](../textbook/chapters/references.md) and
-[credits](../textbook/chapters/credits.md).
+they are used. See the [literature guide](../notes/chapters/references.md) and
+[credits](../notes/chapters/credits.md).

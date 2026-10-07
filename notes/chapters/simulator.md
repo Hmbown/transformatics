@@ -88,4 +88,4 @@ presets do not reproduce its field. Using that theorem for a guaranteed numerica
 run still requires effective constants, a matching datum and a proved grid/time
 error bound. The new theorem does not certify the current 16³ or 32³ runs.
 
-The local numerical checks cover Fourier identities, divergence projection, exact Beltrami decay, and refinement of a short nonlinear step. They can be replayed from [the check source](../assets/fluid/checks.js) with Node using `node textbook/assets/fluid/checks.js` in the repository.
+The local numerical checks cover Fourier identities, divergence projection, exact Beltrami decay, and refinement of a short nonlinear step. They can be replayed from [the check source](../assets/fluid/checks.js) with Node using `node notes/assets/fluid/checks.js` in the repository.

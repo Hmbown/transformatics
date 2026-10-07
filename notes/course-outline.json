@@ -286,7 +286,7 @@
     "reader-map": {
       "prerequisites": [],
       "objectives": [
-        "Find the book’s central statements using standard mathematical terminology.",
+        "Find the central statements in these notes using standard mathematical terminology.",
         "Prove a sharp prediction-error bound from lost information and compare exact memory with noisy observations.",
         "Distinguish self-contained teaching proofs from summaries requiring their research sources."
       ],

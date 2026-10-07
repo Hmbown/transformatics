@@ -1,6 +1,6 @@
 # Claim register
 
-Generated from [claims.json](claims.json); edit that source and run `python scripts/build_textbook.py --update-claim-index`. The linked source records state the scope of each result.
+Generated from [claims.json](claims.json); edit that source and run `python scripts/build_notes.py --update-claim-index`. The linked source records state the scope of each result.
 
 AI review is a process record, not external expert acceptance or proof certification.
 

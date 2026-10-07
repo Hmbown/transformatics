@@ -81,6 +81,6 @@ in a fresh supported environment.
 
 The singularity construction and imported proof are OpenAI's work. This
 project supplies the local verification record, source reading and
-textbook explanation. Its unforced ROOT and E-prime targets remain open.
+learning notes explanation. Its unforced ROOT and E-prime targets remain open.
 The [local phase-covariance corollary](../phase_covariance/README.md)
 is a separately scoped teaching result derived from one upstream lemma.

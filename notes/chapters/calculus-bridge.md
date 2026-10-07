@@ -173,7 +173,7 @@ $$
 $$
 
 The first records the largest magnitude. The second is the root mean square.
-Without the subscript “av,” this book uses the integral without division by
+Without the subscript “av,” these notes use the integral without division by
 the interval's length. That convention changes a numerical constant.
 
 For $f(x)=a\sin(Nx)$ with positive integer $N$,

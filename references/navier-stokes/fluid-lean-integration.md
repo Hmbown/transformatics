@@ -50,7 +50,7 @@ His remarks are not an announcement of an unforced NS proof or an
 endorsement of this repository. He also emphasizes understanding the
 mechanism and making its reasoning teachable.
 
-That advice informs this textbook's order: show the target equation,
+That advice informs the order of these notes: show the target equation,
 derive the simplified mechanism, identify its exact correspondence to the
 full equation, then account for every approximation error and feedback
 term. The screenshot is contextual evidence, not a mathematical premise.
@@ -130,5 +130,5 @@ with nonlinear receiving-seed control and original-time compatibility.
 That finer-wave theorem is also a written analytic result, outside the
 present Lean coverage. Infinite iteration still requires one smooth
 initial datum, one viscosity and a uniform depth/error budget.
-The [textbook](../../textbook/README.md) teaches the known transfers and their
+The [learning notes](../../notes/README.md) explain the known transfers and their
 remaining obligations; it does not present an unfinished chain as a solution.

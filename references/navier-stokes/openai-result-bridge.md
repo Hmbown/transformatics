@@ -1,6 +1,6 @@
-# External OpenAI result: evidence and textbook bridge
+# Reading OpenAI’s external result
 
-Checked 8 September 2026. This record accompanies [the textbook chapter](../../textbook/chapters/published-proof.md). It attributes an external result and records a bounded source inspection; it is not a local certification of the complete proof or a claim that the project produced that result.
+Checked 8 September 2026. This record accompanies [the chapter on the published construction](../../notes/chapters/published-proof.md). It attributes an external result and records a bounded source inspection; it is not a local certification of the complete proof or a claim that the project produced that result.
 
 ## Release pins and inspected scope
 

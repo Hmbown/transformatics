@@ -115,7 +115,7 @@ ten-minute limit, and a later attempt was stopped after about 24.8 minutes
 under host memory and swap pressure (exit 143, empty buffered log). Neither
 outcome is a proof rejection or a passing verification. The record also notes
 that the independently implemented Comparator/Nanoda check has not been run
-here. The textbook retains **IMPORTED** to record
+here. The notes retain **IMPORTED** to record
 authorship; the separate formalization field records what was checked locally.
 
 A third record concerns the

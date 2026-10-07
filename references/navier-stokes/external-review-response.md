@@ -99,7 +99,7 @@ report alone. ROOT, E-prime and FORCED-D remain OPEN.
 
 ## Teaching and public presentation
 
-The textbook keeps its classical mathematical lineage explicit. Transformatics
+The notes keep their classical mathematical lineage explicit. Transformatics
 is the name of this course and research program; the report does not establish
 it as a new mathematical discipline. A corrected carrier-cap model could
 become a worked example once its assumptions and transfer gap are taught

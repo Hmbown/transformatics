@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 INVENTORY = ROOT / "docs" / "PUBLICATION_INVENTORY.json"
-CLAIMS = ROOT / "textbook" / "claims.json"
+CLAIMS = ROOT / "notes" / "claims.json"
 
 ABSOLUTE_PATH_PATTERN = re.compile(r"(/Users/|/Volumes/|/home/|/private/|[A-Za-z]:\\)")
 CACHE_MARKERS = ("__pycache__", ".DS_Store", "_site/", ".venv/", ".pytest_cache/", "node_modules/")
@@ -28,10 +28,10 @@ REQUIRED_FILES = {
     "LICENSE",
     "CITATION.cff",
     "README.md",
-    "textbook/claims.json",
-    "textbook/claims.md",
-    "textbook/requirements.txt",
-    "scripts/build_textbook.py",
+    "notes/claims.json",
+    "notes/claims.md",
+    "notes/requirements.txt",
+    "scripts/build_notes.py",
 }
 
 

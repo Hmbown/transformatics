@@ -212,7 +212,7 @@ Original source: `nse-outer-independent-review-20260908.md`; SHA-256 `1830f902fd
 
 # Independent review of the full outer polarization matching
 
-8 September 2026. Reviewer: textbook_site / inner-matching lane.
+8 September 2026. Reviewer: inner-matching review agent.
 Reviewed `outer-matching.md` in full against the exact
 central model, and checked its interface with the separately derived
 inner equation. No canonical edits or DNS.

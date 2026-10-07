@@ -1,6 +1,6 @@
 # A mathematical reading map
 
-This book follows a prediction through changes of description. Its elementary
+These notes follow a prediction through changes of description. Their elementary
 identities belong to established mathematics. What the course offers is a
 sequence of examples in which the same questions recur: what information is
 retained, how an error propagates, and which hypotheses a stronger conclusion
@@ -91,7 +91,7 @@ triangle inequality. They motivate [transfer systems](transfer-systems.md),
 ## The mathematics in familiar terms
 
 Use this table to locate a statement without reading every introductory example.
-“Transfer” is the book's common wording for several related comparisons; the
+“Transfer” is the notes' common wording for several related comparisons; the
 actual maps, norms and time domains determine each one.
 
 | Book language | Established mathematical connection | Where to inspect the argument |

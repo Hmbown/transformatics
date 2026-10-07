@@ -58,7 +58,7 @@
       const query = searchInput.value.trim().toLowerCase();
       if (!query) { status.textContent = 'Enter a search term.'; return; }
       if (failed) { status.textContent = 'The search index could not load. Use the glossary or complete Markdown download.'; return; }
-      if (!index) { status.textContent = 'Loading the book index…'; return; }
+      if (!index) { status.textContent = 'Loading the notes index…'; return; }
       const terms = query.split(/\s+/);
       const hits = index.filter(row => terms.every(term => (row.title + ' ' + row.text).toLowerCase().includes(term)));
       status.textContent = `${hits.length} ${hits.length === 1 ? 'chapter' : 'chapters'} found.`;

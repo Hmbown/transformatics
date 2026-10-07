@@ -25,7 +25,7 @@ box routes, and detector paths are labelled as schematics in the film.
 ## Narration and rendering
 
 Requirements: Python 3.11+, Node.js 18+, FFmpeg, and Chromium through Playwright.
-From `textbook/film`, install the dependencies in a Python environment of your
+From `notes/film`, install the dependencies in a Python environment of your
 choice and install the browser:
 
 ```sh

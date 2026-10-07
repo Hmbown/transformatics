@@ -4,7 +4,7 @@
 
 The three restricted nodes are `nse-diagonal-window`, `nse-growing-profile-window` and `nse-cycle-speed-loss`. Written source and independent AI-agent reviews are preserved below. The longer-window exact-remainder estimate and fixed-positive-amplitude cycle extension are corollaries of this checkpoint, not new global claims. The exact cycle controls passed; analytic review is distinct from a formal PDE certificate. The prior integration receipt recorded missing metadata pins; the graph now distinguishes written `proof_reviews` from executable `pin_tests`.
 
-The user subsequently changed the priority to the textbook. [The published external result](openai-result-bridge.md) is imported for FORCED-D; ROOT and E-prime remain open. None of these finite local results supplies the external singularity construction.
+The user subsequently changed the priority to the learning notes. [The published external result](openai-result-bridge.md) is imported for FORCED-D; ROOT and E-prime remain open. None of these finite local results supplies the external singularity construction.
 
 | Recorded source before publication cleanup | SHA-256 |
 |---|---|

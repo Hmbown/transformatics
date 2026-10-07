@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "Cite this first public teaching edition with Hunter Bown as project originator and editor; acknowledge the human–model collaboration described in the credits. Cite external mathematical results separately."
-title: "Transformatics: Finite Change, Continuous Evolution, and the Passage Between Mathematical Models"
+message: "Cite these learning notes with Hunter Bown as project originator and editor; acknowledge the human–model collaboration described in the credits. Cite external mathematical results separately."
+title: "Transformatics: Learning Notes on Transformations and Fluid Motion"
 version: "1.0.0"
 url: "https://github.com/Hmbown/transformatics"
 authors:
@@ -8,12 +8,11 @@ authors:
     given-names: Hunter
 repository-code: "https://github.com/Hmbown/transformatics"
 license: MIT
-abstract: "Teaching notes on finite transformations, observables, flows, representations, stability and scaling, with worked fluid-mechanics case studies. Developed through a human–model collaboration; contribution provenance and external mathematical authorship are documented separately."
+abstract: "Learning notes on finite transformations, observables, flows, representations, stability and scaling, with worked fluid-mechanics case studies. Developed through a human–model collaboration; contribution provenance and external mathematical authorship are documented separately."
 preferred-citation:
-  type: book
-  title: "Transformatics: Finite Change, Continuous Evolution, and the Passage Between Mathematical Models"
+  type: generic
+  title: "Transformatics: Learning Notes on Transformations and Fluid Motion"
   authors:
     - family-names: Bown
       given-names: Hunter
   year: 2026
-  edition: "First public teaching edition"

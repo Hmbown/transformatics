@@ -22,7 +22,7 @@ It does not give an arbitrary prescribed growth rate.
 The [periodic-cycle speed calculation](../analysis/cycle-next-transfer.md)
 proves ||U_mu(tau)||infinity²<=3-3mu tau-(4/5)tau^4 on one uniform
 short interval. At a time when its strain energy has increased, maximum
-speed has decreased. The textbook now teaches that observable distinction.
+speed has decreased. The notes now illustrate that observable distinction.
 These are restricted written analytic results reviewed by AI agents,
 not formal PDE certificates or external expert acceptance. ROOT, E-prime
 and FORCED-D remain OPEN. No research DNS or public release.

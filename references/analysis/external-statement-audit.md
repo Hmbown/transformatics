@@ -2,7 +2,7 @@
 
 8 September 2026. **Bounded independent AI-agent source audit.** The two exported formal statements and their solution predicates agree with forced alternatives C and D at the inspected scope. No hidden viscosity restriction, pressure-periodicity omission, derivative-junk-value escape, or extra assumption on a competing periodic solution was found. This is a reading and static import audit, not a compilation, kernel replay, external expert review, or certification of every construction lemma.
 
-The audited public source is [openai/NavierStokesAndEuler at commit `8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538`](https://github.com/openai/NavierStokesAndEuler/tree/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538). The checkout's commit was verified locally. Comparison targets were the [paper/textbook bridge](../navier-stokes/openai-result-bridge.md), [published-proof chapter](../../textbook/chapters/published-proof.md), and the external paper's Theorem 1.1 and Corollary 10.6 as recorded there. No toolchain installation, dependency script, build, or DNS was run by this audit.
+The audited public source is [openai/NavierStokesAndEuler at commit `8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538`](https://github.com/openai/NavierStokesAndEuler/tree/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538). The checkout's commit was verified locally. Comparison targets were the [paper-to-notes comparison](../navier-stokes/openai-result-bridge.md), [published-proof chapter](../../notes/chapters/published-proof.md), and the external paper's Theorem 1.1 and Corollary 10.6 as recorded there. No toolchain installation, dependency script, build, or DNS was run by this audit.
 
 ## 1. The challenge placeholders do not supply the submitted proof
 
@@ -54,7 +54,7 @@ The whole-space comparison retains the competitor's uniform finite energy in its
 
 `ProblemStatement.candidateStatement` is a proposition defined by explicit field conditions, not an axiom. Its old “OPEN” comments describe the statement-only module. The later `selected_candidate` theorem supplies a proof term in a different module. Conversely, reading that final invocation alone does not independently verify the hundreds of upstream construction lemmas.
 
-## 5. Two distinctions the textbook evidence should preserve
+## 5. Two distinctions the evidence in these notes should preserve
 
 **The exported type is narrower than every detail of the paper theorem.** It states nonexistence of a global admissible solution. It does not itself mention zero data, compact support, blow-up time one, or the constructed velocity's uniformly bounded preterminal energy. Zero data, support, and unbounded speed are visible in the inspected witnesses. Uniform preterminal energy of the constructed velocity is not a field of `CandidateProperties` or `R3CompactCandidate.Properties`; the explicit uniform energy condition in the comparator concerns a hypothetical whole-space competitor. The paper's preterminal energy assertion should retain its paper attribution unless a corresponding formal theorem or an additional formal derivation is identified.
 

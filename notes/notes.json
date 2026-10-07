@@ -1,11 +1,11 @@
 {
   "title": "Transformatics",
-  "subtitle": "Finite change, continuous evolution, and the passage between mathematical models",
-  "edition": "First edition · 8 September 2026",
+  "subtitle": "Learning notes on transformations, mathematical models, and fluid motion",
+  "edition": "Learning notes · 6 October 2026",
   "chapters": [
     [
       "index",
-      "Preface and how to use this book"
+      "Introduction and how to use these notes"
     ],
     [
       "transformations",

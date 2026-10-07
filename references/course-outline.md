@@ -1,7 +1,7 @@
 # Teaching Transformatics
 
-**Textbook course, 8 September 2026.** This curriculum supports the
-[textbook](../textbook/chapters/index.md). It replaces the June sequence
+**Study outline, 8 September 2026.** This curriculum supports the
+[learning notes](../notes/chapters/index.md). It replaces the June sequence
 through static vorticity–strain optimization. It is a course in finite
 transformations, observables, and quantitative comparison of evolutions.
 The core is a mathematical course with assessable results; the advanced
@@ -17,7 +17,7 @@ its assumptions. Recognizing the vocabulary is insufficient.
 
 The entry point is high-school algebra and single-variable calculus.
 The first chapter uses function composition, polynomial algebra and finite
-sums. The optional [calculus bridge](../textbook/chapters/calculus-bridge.md)
+sums. The optional [calculus bridge](../notes/chapters/calculus-bridge.md)
 introduces small matrices, the multivariable chain rule, vector derivatives,
 norms, integration by parts for heat flow, Fourier modes and quantifiers.
 Assign its short checks at the point each tool first appears; it need not
@@ -30,7 +30,7 @@ finish the foundation course and the exact shear example while treating the
 advanced sources as a route for later study.
 
 For experienced readers, the
-[mathematical reading map](../textbook/chapters/reader-map.md) identifies the
+[mathematical reading map](../notes/chapters/reader-map.md) identifies the
 standard connections and leads directly to the substantive statements.
 A seminar can begin with its sharp prediction-error problem, prove the
 factor criterion, and compare representation error with lost information.
@@ -57,7 +57,7 @@ his experience of calculus could better explain change in real systems,
 developed in collaboration with frontier and open-source models, especially
 DeepSeek and GLM. Treat that motivation as an invitation to formulate and
 test mathematics. It is not evidence of superiority to established fields.
-The [credits chapter](../textbook/chapters/credits.md) records attribution;
+The [credits chapter](../notes/chapters/credits.md) records attribution;
 students should distinguish the course's proposed synthesis from classical
 theorems and from other authors' research.
 
@@ -83,12 +83,12 @@ numbers refer to the chapter’s own exercise section.
 
 | Unit and reading | Student work | Evidence of readiness |
 |---|---|---|
-| 1. [Finite transformations](../textbook/chapters/transformations.md) | Calculate pullbacks and finite differences; prove the product and telescoping laws; compare the two orders of a shear and a translation. | Exercises 2, 3, 5 and 6: distinguish an invariant measurement from an unchanged state, detect order with a chosen observable, telescope varying updates, and use a closed space of quadratic observables. |
-| 2. [Generators](../textbook/chapters/generators.md) | Derive \(L_vf=v\cdot\nabla f\); recover finite change by integration; calculate both fixed-location and particle-following derivatives. | Exercises 3–6 check generator limits, material invariants, finite lifetime and numerical steps. Exercise 7 shows why a time-one map does not determine the intervening motion or its generator. |
-| 3. [Transfer systems](../textbook/chapters/transfer-systems.md) | Type every map, prove the necessary and sufficient fiber condition for an exact quotient, and prove quantitative composition by inserting one intermediate state. | Exercises 1–4 separate exact representation from reconstruction, calculate a nonlinear output conversion, respect an existence interval, and distinguish linear from quadratic observable error. |
-| 4. [Composition and error](../textbook/chapters/composition.md) | Derive \(e_{j+1}\le L_je_j+\delta_j\) and its iterated bound; distinguish composition across time from composition across descriptions. | Exercises 1, 2, 4 and 5 establish transfer and error calculations. Exercises 6–7 check operator order and require an invariant-region proof. Complete Assessment A. |
-| 5. [Scale and resolution](../textbook/chapters/scaling.md) | Derive amplitude, derivative and volume factors; transform the equation and time interval; identify the same diffusion number in both descriptions. | Exercises 1–5 convert norms and tolerances, compute terms from time-dependent scale, distinguish criticality from conservation, and identify an aliased product. |
-| 6. [The fluid equation](../textbook/chapters/equation.md) | Check every term of an exact shear; derive pressure and energy laws; identify strain as a deformation measurement. | Exercises 1–4 verify a three-dimensional datum, recover pressure, explain the limits of energy checks, and reject a terminally singular force. Complete Assessment B. |
+| 1. [Finite transformations](../notes/chapters/transformations.md) | Calculate pullbacks and finite differences; prove the product and telescoping laws; compare the two orders of a shear and a translation. | Exercises 2, 3, 5 and 6: distinguish an invariant measurement from an unchanged state, detect order with a chosen observable, telescope varying updates, and use a closed space of quadratic observables. |
+| 2. [Generators](../notes/chapters/generators.md) | Derive \(L_vf=v\cdot\nabla f\); recover finite change by integration; calculate both fixed-location and particle-following derivatives. | Exercises 3–6 check generator limits, material invariants, finite lifetime and numerical steps. Exercise 7 shows why a time-one map does not determine the intervening motion or its generator. |
+| 3. [Transfer systems](../notes/chapters/transfer-systems.md) | Type every map, prove the necessary and sufficient fiber condition for an exact quotient, and prove quantitative composition by inserting one intermediate state. | Exercises 1–4 separate exact representation from reconstruction, calculate a nonlinear output conversion, respect an existence interval, and distinguish linear from quadratic observable error. |
+| 4. [Composition and error](../notes/chapters/composition.md) | Derive \(e_{j+1}\le L_je_j+\delta_j\) and its iterated bound; distinguish composition across time from composition across descriptions. | Exercises 1, 2, 4 and 5 establish transfer and error calculations. Exercises 6–7 check operator order and require an invariant-region proof. Complete Assessment A. |
+| 5. [Scale and resolution](../notes/chapters/scaling.md) | Derive amplitude, derivative and volume factors; transform the equation and time interval; identify the same diffusion number in both descriptions. | Exercises 1–5 convert norms and tolerances, compute terms from time-dependent scale, distinguish criticality from conservation, and identify an aliased product. |
+| 6. [The fluid equation](../notes/chapters/equation.md) | Check every term of an exact shear; derive pressure and energy laws; identify strain as a deformation measurement. | Exercises 1–4 verify a three-dimensional datum, recover pressure, explain the limits of energy checks, and reject a terminally singular force. Complete Assessment B. |
 
 The sequence has a specific dependency. Unit 3 determines the comparison
 and the information missing from a representation. Unit 4 propagates its
@@ -139,7 +139,7 @@ not a longer list of definitions.
 
 ## Assessment A: one evolution, several measurements
 
-The first [practice assessment](../textbook/chapters/practice.md#assessment-a)
+The first [practice assessment](../notes/chapters/practice.md#assessment-a)
 uses \(a'=-a+b\), \(b'=-2b\). Students solve the full system, discover the
 closed total \(R(a,b)=a+b\), calculate the error of the multiplier \(0.51\)
 at steps of length \(\log2\), and reconstruct the full vector. A display
@@ -166,7 +166,7 @@ observable closes can be tested against the derivative of \(a^2\).
 
 ## Assessment B: one shear, several descriptions
 
-The second [practice assessment](../textbook/chapters/practice.md#assessment-b)
+The second [practice assessment](../notes/chapters/practice.md#assessment-b)
 adds physical fields, derivative-sensitive observations and resolution.
 Use the two-frequency shear
 
@@ -200,7 +200,7 @@ decisions; and 3 for a claim card with correct datum and time quantifiers.
 Require an explanation of why temporal refinement cannot remove a spatial
 error floor. A correct simulation plot does not substitute for that argument.
 
-The [fluid laboratory](../textbook/chapters/simulator.md) can support a
+The [fluid laboratory](../notes/chapters/simulator.md) can support a
 follow-up comparison with its implemented benchmarks. Students should
 predict the benchmark’s decay before running it and identify the solver’s
 actual spatial and temporal methods before comparing results. Numerical
@@ -218,19 +218,19 @@ arguments. They do not constitute a self-contained first PDE course.
 
 | Reading | Question the student should answer in writing |
 |---|---|
-| [Residuals and smooth forcing](../textbook/chapters/residuals.md) | Derive a residual error equation, calculate its propagator, and distinguish a force with small amplitude from one with every required mixed derivative controlled. Verify the mean-stress pressure projection and the complete cutoff terms. |
-| [Frequency creation](../textbook/chapters/activation.md) | Which interaction creates the selected mode, and what remainder estimate makes its leading coefficient informative about an actual solution? |
-| [Concentration](../textbook/chapters/concentration.md) | Convert an accumulated-strain bound into an error certificate, including the background's contribution to the measured output. Explain why summing lifetimes of separate solutions does not join them into one trajectory. |
-| [A steady reference flow](../textbook/chapters/steady.md) | Which estimates compare Euler and NS, on what interval, and which constants must be fixed before a scale tends to zero? |
-| [Pressure and polarization](../textbook/chapters/oblique.md) | Derive the pressure coefficient by preserving transversality, compute a covector return with an inverse transpose, and evolve an eigenvector of the limiting amplitude matrix. Which comparison is still needed for the actual compact flow? |
-| [Finite amplification](../textbook/chapters/viscous.md) | Construct a real packet as a curl, check its divergence and normalization, then use the stated PDE inputs to compare gain, damping, nonlinear error and the background tail. Distinguish a large amplification ratio from a large absolute output. |
-| [Iteration and limits](../textbook/chapters/iteration.md) | Identify the data passed from one stage to the next. Prove the relevant accumulated error or convergence statement, and distinguish a sequence of regular solutions from stages of one solution. |
-| [The published proof](../textbook/chapters/published-proof.md) | State the external theorem's domain, data, force class and terminal conclusion. Follow one complete transfer of an estimate through its construction; list the hypotheses supplied there that our finite results do not supply. |
-| [Making a new construction](../textbook/chapters/new-constructions.md) | Prove the classical component-replacement estimate, construct a different coupling with the same complete handover, and identify the weighted condition that preserves its output. Formulate one specific replacement problem for the external construction without assuming it is solvable. |
-| Optional: [Advanced transfer](../textbook/chapters/advanced-transfer.md) | Study original-time preparation, strain handover and later windows after the main course. Supplementary Exercise 8 distinguishes estimates for each fixed power from an estimate uniform in the power. These source-dependent extensions are not prerequisites for the elementary capstone. |
+| [Residuals and smooth forcing](../notes/chapters/residuals.md) | Derive a residual error equation, calculate its propagator, and distinguish a force with small amplitude from one with every required mixed derivative controlled. Verify the mean-stress pressure projection and the complete cutoff terms. |
+| [Frequency creation](../notes/chapters/activation.md) | Which interaction creates the selected mode, and what remainder estimate makes its leading coefficient informative about an actual solution? |
+| [Concentration](../notes/chapters/concentration.md) | Convert an accumulated-strain bound into an error certificate, including the background's contribution to the measured output. Explain why summing lifetimes of separate solutions does not join them into one trajectory. |
+| [A steady reference flow](../notes/chapters/steady.md) | Which estimates compare Euler and NS, on what interval, and which constants must be fixed before a scale tends to zero? |
+| [Pressure and polarization](../notes/chapters/oblique.md) | Derive the pressure coefficient by preserving transversality, compute a covector return with an inverse transpose, and evolve an eigenvector of the limiting amplitude matrix. Which comparison is still needed for the actual compact flow? |
+| [Finite amplification](../notes/chapters/viscous.md) | Construct a real packet as a curl, check its divergence and normalization, then use the stated PDE inputs to compare gain, damping, nonlinear error and the background tail. Distinguish a large amplification ratio from a large absolute output. |
+| [Iteration and limits](../notes/chapters/iteration.md) | Identify the data passed from one stage to the next. Prove the relevant accumulated error or convergence statement, and distinguish a sequence of regular solutions from stages of one solution. |
+| [The published proof](../notes/chapters/published-proof.md) | State the external theorem's domain, data, force class and terminal conclusion. Follow one complete transfer of an estimate through its construction; list the hypotheses supplied there that our finite results do not supply. |
+| [Making a new construction](../notes/chapters/new-constructions.md) | Prove the classical component-replacement estimate, construct a different coupling with the same complete handover, and identify the weighted condition that preserves its output. Formulate one specific replacement problem for the external construction without assuming it is solvable. |
+| Optional: [Advanced transfer](../notes/chapters/advanced-transfer.md) | Study original-time preparation, strain handover and later windows after the main course. Supplementary Exercise 8 distinguishes estimates for each fixed power from an estimate uniform in the power. These source-dependent extensions are not prerequisites for the elementary capstone. |
 
 For each case, students should produce the claim card described in
-[practice](../textbook/chapters/practice.md), then reconstruct one selected
+[practice](../notes/chapters/practice.md), then reconstruct one selected
 estimate. A source proof, a formalized algebraic sublemma and a numerical
 observation must retain their different scopes.
 
@@ -247,7 +247,7 @@ the published-proof chapter for the external result and verification scope.
 
 ## A final reading assignment
 
-Complete [the constructive capstone](../textbook/chapters/new-constructions.md)
+Complete [the constructive capstone](../notes/chapters/new-constructions.md)
 before this assignment. Its freely chosen interior function gives an
 explicit family to vary while preserving the handover. Use that experience
 to distinguish proposing a replacement from proving that it meets the next

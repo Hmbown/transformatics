@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate the public publication inventory.
 
-The inventory records every file included in the public textbook snapshot with
+The inventory records every file included in the public learning notes snapshot with
 its SHA-256 hash and size, together with the source revision and the scope
 notes. It contains no machine-specific paths or personal information.
 
@@ -44,12 +44,12 @@ EXCLUDED_FILES = {
 
 # Generated output kept out of commits (see the matching .gitignore files).
 EXCLUDED_PATHS = {
-    "textbook/film/out",
+    "notes/film/out",
 }
 
 SCOPE = (
-    "Curated public teaching snapshot. Includes the textbook, every source "
-    "listed in textbook/claims.json and the files those sources link to, the "
+    "Curated public teaching snapshot. Includes the learning notes, every source "
+    "listed in notes/claims.json and the files those sources link to, the "
     "scoped Lean formalizations and their receipts, the focused reproduction "
     "tests and experiments for cited claims, artifact receipts cited by the "
     "register, and the attribution, license and release metadata."
@@ -152,7 +152,7 @@ def main(argv: list[str] | None = None) -> int:
 
     inventory = {
         "schema": SCHEMA,
-        "edition": args.edition or existing.get("edition") or "First public teaching edition",
+        "edition": args.edition or existing.get("edition") or "Learning notes",
         "prepared": args.prepared or existing.get("prepared"),
         "public_repository": existing.get("public_repository") or "Hmbown/transformatics",
         "public_url": existing.get("public_url") or "https://github.com/Hmbown/transformatics",

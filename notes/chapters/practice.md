@@ -427,12 +427,12 @@ For an approximate construction, give the full PDE residual and a strong-norm st
 Clone the repository, retain its recorded research environment, and consult the source notes before running mathematical instruments. The website itself needs only Python and the pinned Markdown package:
 
 ```sh
-python -m pip install -r textbook/requirements.txt
-python scripts/build_textbook.py
-python -m http.server 8000 --directory textbook/_site
+python -m pip install -r notes/requirements.txt
+python scripts/build_notes.py
+python -m http.server 8000 --directory notes/_site
 ```
 
-The builder emits the textbook, chapter Markdown, a claim index in JSON, and copies of the referenced research sources. It checks local links and recorded source hashes. Open the local address above to read the generated edition.
+The builder emits the learning notes, chapter Markdown, a claim index in JSON, and copies of the referenced research sources. It checks local links and recorded source hashes. Open the local address above to read the generated edition.
 
 Each theorem's source note links its focused instrument, test, and receipt. Test success checks the implemented pins; it does not replace reading the analytic estimates. No new DNS is needed for these chapters.
 

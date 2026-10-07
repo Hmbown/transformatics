@@ -1,6 +1,8 @@
 # A calculus of transformations
 
-How can we predict a measurement after many updates, and know how accurate that prediction is? This course begins with a map of a number, develops a calculus for its action on measurements, and uses that calculus to compare descriptions of an evolving fluid. Its subject is **quantitative transfer**: the conditions under which a conclusion in one description remains valid in another.
+These are Hunter Bown's learning notes from studying transformations and fluid motion with AI tools. They collect explanations, worked examples, and exercises that helped organize that study.
+
+How can we predict a measurement after many updates, and know how accurate that prediction is? The notes begin with a map of a number, develop a calculus for its action on measurements, and use that calculus to compare descriptions of an evolving fluid. The recurring question is **quantitative transfer**: the conditions under which a conclusion in one description remains valid in another.
 
 Take a state $x\in\mathbb R$, an update $T_h(x)=x+h$, and the observable $f(x)=x^2$. The exact change is
 
@@ -27,7 +29,7 @@ $$
 
 A translation, a rotation, a numerical time step, and a fluid flow all act on observables this way. The course connects finite changes, continuous generators, representations, stability, and scale conversion. For each comparison, you will specify the state, evolution, observable, norm and time domain before asserting that an approximation is useful.
 
-*Transformatics* names the organizing viewpoint of this book: follow a
+*Transformatics* names the organizing viewpoint of these notes: follow a
 mathematical prediction through changes of state, representation, scale and
 approximation. Its foundations are classical finite differences, pullbacks
 and Koopman operators, dynamical systems, Lie derivatives, numerical analysis
@@ -43,7 +45,7 @@ identifies which kind of answer it supplies.
 Hunter Bown initiated the project with AI assistance, especially DeepSeek and
 GLM according to his account. The [credits](credits.md) describe the history.
 
-## Choose a route through the book
+## Choose a route through the notes
 
 **If your background is high-school calculus**, begin with
 [finite transformations](transformations.md). It needs algebra and function
@@ -156,7 +158,7 @@ Connecting any singularity theorem to a reliable simulator additionally requires
 
 This route can be read after transfer systems and composition, without the fluid chapters. It connects to established information and control theory and frames air–water autonomy as a proposed research application, with the model validation and experiments still to be done.
 
-## Using the book as a reference
+## Using the notes as a reference
 
 Every chapter is available as Markdown. The [claim register](../claims.md)
 connects research statements to their source proofs; its

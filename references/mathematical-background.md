@@ -4,22 +4,22 @@
 > document. Its status vocabulary — for example, "PROVED" as a short proof a
 > referee could check — predates the current evidence fields and is not the
 > current certification standard. Present standing is in
-> [textbook/claims.md](../textbook/claims.md), [STATUS.md](../docs/STATUS.md) and the
+> [notes/claims.md](../notes/claims.md), [STATUS.md](../docs/STATUS.md) and the
 > [archive reading guide](../docs/sources.md).
 
-Transformatics is a textbook and research project developed
+These learning notes and research examples were developed
 by Hunter Bown in collaboration with language models. Its organizing viewpoint
 brings established tools to a connected
 problem: **how finite changes act on observable quantities, and under what
 conditions conclusions can pass between descriptions of an evolving system.**
 
 The motivating question grew out of Hunter's wish to understand finite change
-beyond the usual presentation of calculus. The textbook develops that question
+beyond the usual presentation of calculus. The notes develop that question
 through mathematics: express a construction, identify the assumptions that make
 it work, and determine what can be changed while preserving its conclusion.
 Its longer-term research aim is to make new constructions easier to find and
 prove. That usefulness must be assessed through particular examples and
-arguments. The [capstone](../textbook/chapters/new-constructions.md) starts with a
+arguments. The [capstone](../notes/chapters/new-constructions.md) starts with a
 standard perturbation estimate, develops a worked replacement example, and
 states a further fluid question.
 
@@ -46,7 +46,7 @@ D_{t,s}(x)=R(T_{t,s}x)-S_{t,s}(Rx).
 An exact transfer has zero defect. An approximate transfer includes a bound on
 this defect and a stability estimate for its propagation. A representation
 that discards information need not admit any exact autonomous evolution.
-The [transfer-systems chapter](../textbook/chapters/transfer-systems.md)
+The [transfer-systems chapter](../notes/chapters/transfer-systems.md)
 proves the precise fiber criterion and gives a two-dimensional counterexample.
 
 ## The operations and their theorems
@@ -96,8 +96,8 @@ correction and limits of repeated constructions.
 The endpoint is an independent calculation. A satisfactory solution states
 its hypotheses, derives its conclusion and explains how the conclusion changes
 when one hypothesis is removed. The [curriculum](course-outline.md)
-and [practice workshop](../textbook/chapters/practice.md) supply exercises and
-cumulative assessments. The book's glossary, source chapters and course manifest
+and [practice workshop](../notes/chapters/practice.md) supply exercises and
+cumulative assessments. The notes' glossary, source chapters and course manifest
 make the same mathematical structure accessible to automated readers.
 
 ## Relationship to established mathematics
@@ -106,14 +106,14 @@ The course draws on finite differences and operator theory for pullbacks,
 dynamical systems for flows and factors, numerical analysis for stability and
 consistency, and PDE analysis for localization and energy methods. These
 connections are mathematical dependencies, not endorsements. The
-[reading guide](../textbook/chapters/references.md) links author, university and
+[reading guide](../notes/chapters/references.md) links author, university and
 publisher sources and explains where each belongs in the course.
 
 One legacy API uses the spelling `resolvant` for a finite difference. This is
-not the operator-theoretic resolvent \((zI-A)^{-1}\); the textbook uses
+not the operator-theoretic resolvent \((zI-A)^{-1}\); the notes use
 \(\Delta_T\) to keep the two objects distinct.
 
-## Navier–Stokes and the first edition
+## Navier–Stokes and these notes
 
 The collaboration pursued the Navier–Stokes problem and produced finite,
 restricted constructions, diagnostic examples and corrected failed routes.
@@ -124,12 +124,12 @@ inspected theorem, source version, formalization claims and reading scope.
 FORCED-D is now **IMPORTED** in this project's register. Unforced ROOT and
 E-prime remain **OPEN**.
 
-The textbook uses the external result to ask a productive further question:
+The notes use the external result to ask a productive further question:
 which operations in a difficult construction can be taught through simpler
 examples without losing their hypotheses? Our local results offer several
 such examples. They are preparation for reading the external construction,
 not a derivation of it or a claim of priority. The
-[collaboration record](../textbook/chapters/credits.md) separates Hunter's account,
+[collaboration record](../notes/chapters/credits.md) separates Hunter's account,
 documented model labels and external scholarship.
 
 ## Historical research handbook (v5, preserved)
@@ -520,7 +520,7 @@ explicit formal-certificate coverage).*
 **v5 addition, 8 September 2026.** Transformatics is the name of this
 proposed research methodology. The framework below makes its operations
 precise; it does not establish a new universally applicable solution
-method or resolve Navier–Stokes. The [textbook](../textbook/README.md)
+method or resolve Navier–Stokes. The [learning notes](../notes/README.md)
 provides a first teaching edition. Earlier case studies retain their
 original dates and the standing assigned by the canonical claim ledger.
 
@@ -644,7 +644,7 @@ evidence class; dependencies; current source; falsifier or check; and
 remaining obligations. A theorem's dependency edge asserts that the exact
 hypotheses were supplied. A teaching or historical edge merely explains
 context and must be labelled separately. The full research graph is preserved
-in the private research archive; the textbook claim index uses the current
+in the private research archive; the learning notes claim index uses the current
 repository's explicit conventions.
 
 ### How to teach a transfer

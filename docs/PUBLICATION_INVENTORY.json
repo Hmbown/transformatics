@@ -1,13 +1,13 @@
 {
   "schema": "transformatics.publication_inventory.v1",
-  "edition": "Textbook and bilingual teaching films",
+  "edition": "Learning notes and bilingual teaching films",
   "prepared": "2026-10-06",
   "public_repository": "Hmbown/transformatics",
   "public_url": "https://github.com/Hmbown/transformatics",
   "source": {
-    "description": "Reviewed textbook and film sources; SHA-256 hashes identify this distribution."
+    "description": "Reviewed learning notes and film sources; SHA-256 hashes identify this distribution."
   },
-  "scope": "Textbook and films with their linked mathematical sources, attribution, reproduction code and checks.",
+  "scope": "Learning notes and films with their linked mathematical sources, attribution, reproduction code and checks.",
   "excluded_scope": [
     "Development history and production notes",
     "Generated media and sites",
@@ -16,24 +16,24 @@
   "counts": {
     "files": 255,
     "symlinks": 0,
-    "bytes": 3140838
+    "bytes": 3140824
   },
   "symlinks": {},
   "files": {
-    ".github/workflows/textbook-checks.yml": {
-      "sha256": "d8628d25cec70c088c3f3483f2ba485b63d6ccc22ac08678189561274a8cb19e",
-      "size": 1328
+    ".github/workflows/notes-checks.yml": {
+      "sha256": "82b7b80331e4284bc89ef641a51215bcd2d67b18703bcbcb791aac3ba164087a",
+      "size": 1326
     },
     ".gitignore": {
-      "sha256": "68057ebaa2bbfcbbc795fe5c7931a4023074e893171d8c5ce16e75a0f42ad289",
-      "size": 251
+      "sha256": "bab71a4b3b47aa374de7ee465d2dacfa0ac9e629083605031bb9ac5b514fcef8",
+      "size": 239
     },
     "CITATION.cff": {
-      "sha256": "96a131c5f20ee78f7bafa5fd76b41848a02e3fd9a0044f6e79c0d71b34e02341",
-      "size": 1090
+      "sha256": "ae76418368ec50eae79119dce91b1b19d3ad20fed163b4e65bda84c717e088fc",
+      "size": 976
     },
     "CONTRIBUTING.md": {
-      "sha256": "43f6c399135939bd93c61222b494575b1447189ea905ec44c821e3ca1dae5b99",
+      "sha256": "f8aeaa1c84109e3d6edfae7e899a633533bf5e8a2a0af09085c5f4acbff529b5",
       "size": 1259
     },
     "LICENSE": {
@@ -41,8 +41,8 @@
       "size": 1067
     },
     "README.md": {
-      "sha256": "32ca38238a022d74203496d7305b6f7d12a7edc66a7617ee89da05b52915787c",
-      "size": 2237
+      "sha256": "bfb1e337101be6df019ed95a83b842af7dcd613cb17845434b9ea7e81057cb35",
+      "size": 2249
     },
     "artifacts/enstrophy_sup/nse_concentrated_packet.json": {
       "sha256": "aaba1ec7087cb74ccca25f9f3f593458d76d20811b7e7f94f2e8f1d7915111d7",
@@ -81,12 +81,12 @@
       "size": 2760
     },
     "docs/STATUS.md": {
-      "sha256": "54ad7a7f7431c2ac2e132315b68b8fdf025411d62027072a086c2e8974c102e3",
-      "size": 925
+      "sha256": "06e45337b7a389d59f9421570ac785cfb3910517dee561629d4e882a096b52d3",
+      "size": 922
     },
     "docs/sources.md": {
-      "sha256": "a402bce8770e2361e3439f1046bae54e1e42d69bdb9fef1ce298ebb6cc95b5c6",
-      "size": 1234
+      "sha256": "0b71865f6e482414712da8ebc7c12849fc1973410926e5e24bff3680298d0c09",
+      "size": 1225
     },
     "experiments/__init__.py": {
       "sha256": "55b31ea6bd63733f2fe55bbc30af59d082d3cbdaacce4137224f00f284ff8548",
@@ -141,8 +141,8 @@
       "size": 6006
     },
     "formalization/external_ns/README.md": {
-      "sha256": "10078f01735ed3ceba3b88ae9f4fdf3f818d23e21d627c3a574fc7ac69242ad1",
-      "size": 4283
+      "sha256": "2a432213adb8ff223e78d0a336eca2c52afddca8afe409de105c7bc33c7474cb",
+      "size": 4289
     },
     "formalization/external_ns/receipt.json": {
       "sha256": "8c17b2d28563fe60180895efec9b916506eb8a7add6532345d08dc0ec6fc0535",
@@ -172,9 +172,265 @@
       "sha256": "89f05d2811859cf0dd69273ea5d4e16faf5b4d0933d0ed95c9d56d026545fa69",
       "size": 3749
     },
+    "notes/.gitignore": {
+      "sha256": "f51416e3b4fc3aa0dac645d7540262f40b0afc36688c81b411f12cd391038b0b",
+      "size": 15
+    },
+    "notes/README.md": {
+      "sha256": "dbaf1b3e6e34088c8638b9f90c21ecb734796eb5262b0eed1e40c61cd4399715",
+      "size": 1822
+    },
+    "notes/assets/book.css": {
+      "sha256": "09d2d4adc5a7490a3d7284e412536b6125ed70017dafb9827b3a19a75a9be3fd",
+      "size": 5840
+    },
+    "notes/assets/book.js": {
+      "sha256": "7724dc08e19938b60631058ccf23cdb82d6c041d3636472c9879319a97caa212",
+      "size": 3993
+    },
+    "notes/assets/fluid/README.md": {
+      "sha256": "aa7e04591ebff468eb0b5aea7380d6d5011ed6b38ec422217edb7581baaf5cef",
+      "size": 2266
+    },
+    "notes/assets/fluid/checks.js": {
+      "sha256": "2aa4d7f1fda0c9767c96cc20e99ffade8e70241650d0ba11ae29274e6d128802",
+      "size": 5330
+    },
+    "notes/assets/fluid/lab.css": {
+      "sha256": "ade25cbb57f214c04a141928a2ad26e9e355deb2488e72cbe45cacf7ce8cb9a6",
+      "size": 1803
+    },
+    "notes/assets/fluid/lab.js": {
+      "sha256": "57c81e019d054141be9204fb00c149c0d4105522c3b2d9d494ec52cab52eacc4",
+      "size": 6251
+    },
+    "notes/assets/fluid/package.json": {
+      "sha256": "c219945793cf0d279c82947a6522e9422b850a215c87cebf040a08aff87a8ee8",
+      "size": 54
+    },
+    "notes/assets/fluid/protocol.js": {
+      "sha256": "820d72b59e86fa02bc8d58a48f5b50d7e3b7210283d349f0b8e998bc7bec63e1",
+      "size": 797
+    },
+    "notes/assets/fluid/solver.js": {
+      "sha256": "8cf23c21cb891cd56b601b7539afcf8e3273415d26b2de752f8049a1430c1971",
+      "size": 9501
+    },
+    "notes/assets/fluid/worker.js": {
+      "sha256": "b3403801c54aa47f164ef25c2fb7841603dacbbe8171bf537adb11bbb51b2857",
+      "size": 1638
+    },
+    "notes/assets/maps.js": {
+      "sha256": "218a2c3a5a575e8226f01f137b02c0953452fdb2d79c03576ba058a5c524afd3",
+      "size": 4752
+    },
+    "notes/chapters/activation.md": {
+      "sha256": "1ac98a93910e674a3bc6d598492261173c086e67aa7c59e3ca3a23c7f9ad7f26",
+      "size": 17528
+    },
+    "notes/chapters/advanced-transfer.md": {
+      "sha256": "5a09c3cc6643d59a82964e038b7806848cd23f9cbe6f3c1dcde22594f99fef71",
+      "size": 39319
+    },
+    "notes/chapters/calculus-bridge.md": {
+      "sha256": "4ef584ff16021ab9644d423a5ec72ca82a82857565083a368724371032aadf63",
+      "size": 12920
+    },
+    "notes/chapters/composition.md": {
+      "sha256": "c5dd5edd9be8e6ac9cda8d7e6dfeea665df4e142f44fc0a6bc9cf3f1eab99017",
+      "size": 19550
+    },
+    "notes/chapters/concentration.md": {
+      "sha256": "94e7aed16665124700a75c43d0c8b0720a6d00d39534914e604ac71b07647110",
+      "size": 12645
+    },
+    "notes/chapters/credits.md": {
+      "sha256": "326588f95abe76f0639a6ce4049ba962b9ab1ed81caf0fc8fb95869e003f0005",
+      "size": 1580
+    },
+    "notes/chapters/equation.md": {
+      "sha256": "a0154a5929bba8ef58de6460947e22ea8cca705c6edcdb42f5202cf9378365b1",
+      "size": 16043
+    },
+    "notes/chapters/evidence.md": {
+      "sha256": "2d82fd7104fce503343559b7b8b6767b3a35b954ad0b92ec03fcb044f8c14bb4",
+      "size": 11424
+    },
+    "notes/chapters/generators.md": {
+      "sha256": "0b01394bca645c457ca13d17486e06281056b64cb52b61228813aa1b35dfafc2",
+      "size": 23987
+    },
+    "notes/chapters/glossary.md": {
+      "sha256": "ff956cf2d5069dcecd0d6dcc47c41e6862c1f19f9cf2cc26ab25bb5e62d10e18",
+      "size": 6639
+    },
+    "notes/chapters/index.md": {
+      "sha256": "fa524bf9114257e518375e4c8ad22f0fc6b015cc468534202b8fdafa5aaed7dc",
+      "size": 14990
+    },
+    "notes/chapters/information-action.md": {
+      "sha256": "096a9b79bb0f9f6044eec9e3aa9c574e75c508f18c57865a7d66752a4fc46dcf",
+      "size": 13174
+    },
+    "notes/chapters/iteration.md": {
+      "sha256": "2df0850bba4a95bf12132c655ec541ff44f79da1b9285b58930a741e61f01994",
+      "size": 14752
+    },
+    "notes/chapters/new-constructions.md": {
+      "sha256": "ca3798a1bb97e1168067ae9a6aa1ed2b4a34e457a0c2b615a69faa98277beb30",
+      "size": 14124
+    },
+    "notes/chapters/oblique.md": {
+      "sha256": "0ad2a3926598780301444639bf8061c7aae8ed7f60153a256083e59a4e327d49",
+      "size": 13759
+    },
+    "notes/chapters/practice.md": {
+      "sha256": "67d393e022dab0acd74fe39c3091739135bd65a728d3f84fe7aa75f4cff5c070",
+      "size": 27301
+    },
+    "notes/chapters/published-proof.md": {
+      "sha256": "f727a80a047f0274d634bfb03c1b5dab48741b346b0b73096a17b7070215c2c5",
+      "size": 21662
+    },
+    "notes/chapters/reader-map.md": {
+      "sha256": "486582a8ff7ae7f5506f7e628d6fe21b92da4c0082b0bfce893047467dff80df",
+      "size": 10158
+    },
+    "notes/chapters/references.md": {
+      "sha256": "a90aa6a20bc479d8aed04fab93cd720cee4972ae3e068af9460dcfa15f2ed08a",
+      "size": 8522
+    },
+    "notes/chapters/residuals.md": {
+      "sha256": "dac688ef7a6b927a31d58be3d16a63c3b24fc906e545b51547e26d102f2ec233",
+      "size": 21060
+    },
+    "notes/chapters/scaling.md": {
+      "sha256": "165e228152708b87f9af9ea29134b2ae736dc49a705db208febfae5d60fc5699",
+      "size": 17865
+    },
+    "notes/chapters/simulator.md": {
+      "sha256": "815c8be7713816bb995b1a05caa2332539b322171cb94fd740d5c9350fe37a31",
+      "size": 6778
+    },
+    "notes/chapters/steady.md": {
+      "sha256": "38d28aa98ed8bbcdf8b28ad9e1c2f173be74275206c630b5a4ae92fb1434afb1",
+      "size": 11035
+    },
+    "notes/chapters/transfer-systems.md": {
+      "sha256": "35a910af5b99a4d8764467ba9c3397ec9aa91c72764331f45cdd0fefc5b776d9",
+      "size": 15179
+    },
+    "notes/chapters/transformations.md": {
+      "sha256": "27cd4c06bd7bc6bf8f6271c5a0b6ab8a89b306e20aedacf21024211834df81af",
+      "size": 21212
+    },
+    "notes/chapters/viscous.md": {
+      "sha256": "b72c6adf71b4689c73303ea9d70a6b7622f959f4321b83c2c51eeac2c1280a6e",
+      "size": 20951
+    },
+    "notes/claims.json": {
+      "sha256": "5a5685d155e7259b2dc7f24e94c9edb1110bf5ddd7f8b73b972cefcf1f673218",
+      "size": 79540
+    },
+    "notes/claims.md": {
+      "sha256": "58dd76b9985442c39147790f968d79426d1ac67739e262a7e958e54b6177129b",
+      "size": 54232
+    },
+    "notes/course-outline.json": {
+      "sha256": "e53b8dbec540866e0b93e11b28b7d4f1ff571c889f33481ac7c46af7b5ea855b",
+      "size": 8581
+    },
+    "notes/film/.gitignore": {
+      "sha256": "1135f3db0ee9982f02b2746393f524c6bb0ad23e291b33efbd1b4bfc604ea1a7",
+      "size": 58
+    },
+    "notes/film/README.md": {
+      "sha256": "87896393193accc3f29fc6083aa8093409dd5c00e214a654e1be8f7b927d31c6",
+      "size": 3205
+    },
+    "notes/film/accuracy.md": {
+      "sha256": "b70fe95af097e87d0eeebb0139a5cbaa0b62a2a19b621a302ecc48927a403971",
+      "size": 2176
+    },
+    "notes/film/checks.mjs": {
+      "sha256": "57d4580a468412f13c9e44d1b842ae84c6892c67afee3974aa3536a33c4d0371",
+      "size": 11654
+    },
+    "notes/film/film.html": {
+      "sha256": "681acf6e47a5a0de30dbcb448bae5a78b20202b54122947a6a700c191f869e38",
+      "size": 841
+    },
+    "notes/film/film.js": {
+      "sha256": "850d49385e485759f71caf964ed40e9fcac08c4c2c2d3a7b6e3efa5a6fd6092b",
+      "size": 99145
+    },
+    "notes/film/inspect.mjs": {
+      "sha256": "b76f6f8809828f99fd6b7c6287dcf2eeeb9c5e21c3db3b42255e69ed51f22275",
+      "size": 3330
+    },
+    "notes/film/labels.zh.js": {
+      "sha256": "2c7286ea6a698d05f81d8dbf1490e10238dbade58c4527c64e8a9f27336ea68b",
+      "size": 20126
+    },
+    "notes/film/narrate.py": {
+      "sha256": "e65981b37bd98072b3e663f823753024c811d174cf8b06359cc9e70bf97a51f0",
+      "size": 9599
+    },
+    "notes/film/package-lock.json": {
+      "sha256": "47708890c04487edc135f57d8d392b6ac746f77e55bcc26aa50a0b82f734bdc1",
+      "size": 2460
+    },
+    "notes/film/package.json": {
+      "sha256": "650dbdcb72bdf48f0f730da108afef34b29a23e26811a9494a079969bda7f9df",
+      "size": 202
+    },
+    "notes/film/render.mjs": {
+      "sha256": "05d73f03fd05851ffe82f01005bbda0b10375748384383a8f687273092923d8b",
+      "size": 5441
+    },
+    "notes/film/requirements.txt": {
+      "sha256": "aeb3f1eabb8722ea0db03443e05be2a8e7da0ffbf1665c89e8457bb232f811e8",
+      "size": 31
+    },
+    "notes/film/script.json": {
+      "sha256": "5e3f4834462a7561b04545e9b38cb215c5f187f4008182b604ef7d6f50ce2223",
+      "size": 31686
+    },
+    "notes/film/script.zh.json": {
+      "sha256": "6f6a029f855226c91641e17afad4932c1180bb176d1657e0ef004767b167928e",
+      "size": 29623
+    },
+    "notes/film/short.html": {
+      "sha256": "1bd71a3ebf58be7760c9834d994ff7a35f92db58112fe444f0d8d68c9eaf2249",
+      "size": 704
+    },
+    "notes/film/short.js": {
+      "sha256": "87721830cc6b6f6322a11d0f2ec696edbd2daf2b9217d41209fe374ae58e712d",
+      "size": 7021
+    },
+    "notes/film/short/script.en.json": {
+      "sha256": "46d767091f7ee12ce0f1a4146af06f8153de6a1d4cdd4935785d520908ae90d4",
+      "size": 2858
+    },
+    "notes/film/short/script.zh.json": {
+      "sha256": "48a669a8d3beb6415e65fa79e3abbd9a39b18cde90a93ca96ecad7f6d3b16172",
+      "size": 2818
+    },
+    "notes/film/zh.py": {
+      "sha256": "5c48ba81da01873d57c330fdf32291075d9cab9b6d3def06cb8d2bd76736db83",
+      "size": 19211
+    },
+    "notes/notes.json": {
+      "sha256": "6f95052dc689de8e3959293326409969817bf546ec792e39e27553c65cbfe610",
+      "size": 2545
+    },
+    "notes/requirements.txt": {
+      "sha256": "8d57742e7a0bb87adf2d3f3ecbe3dfcabaf3cb66c76d07912d3508e0d28d140c",
+      "size": 16
+    },
     "pyproject.toml": {
-      "sha256": "1f785b01fd927f9b3ff7582a84ff562898a5dbd4008d35a9de55e9e0d984915a",
-      "size": 719
+      "sha256": "860336f1b9c70d5725e9b7cb28d4f551871433ceb7e0acc27725bf356c056933",
+      "size": 725
     },
     "references/analysis/actual-coarse-band-review.md": {
       "sha256": "63f483818f1cc8e1e9c00599ed82ac94dac9240aa9281133d641a12042f29b61",
@@ -329,8 +585,8 @@
       "size": 15840
     },
     "references/analysis/external-statement-audit.md": {
-      "sha256": "cf59c17daeb0f50d410d526f122f8e74dc4bb254b2a5ca4b9acf266390b8b442",
-      "size": 13528
+      "sha256": "40f7899b4ad8594baa120c1a71b0bf412a41180de3ce868ca9777e439a189c66",
+      "size": 13535
     },
     "references/analysis/finer-scale-review.md": {
       "sha256": "0277ff3d065f6bcde2c0874c488440ebdfcc518fcff2764cd95cb3a0300560d0",
@@ -461,8 +717,8 @@
       "size": 15951
     },
     "references/analysis/matching-review.md": {
-      "sha256": "db308c177e6b3646af90f53fc424792c2869de846b305f843b322f3ebb748049",
-      "size": 54764
+      "sha256": "7338e57b7e11e2b72ed34974b3e3fcaee5cda1cf28ee884d4e39dd23f2093b28",
+      "size": 54756
     },
     "references/analysis/mixed-seed-nonlinear-budget.md": {
       "sha256": "fcd938d01e440a0022fd8fee05a92b3d03a21d654f47362c9278859830c1f49a",
@@ -589,16 +845,16 @@
       "size": 20487
     },
     "references/course-outline.md": {
-      "sha256": "5e80b657ff15596ba0f42a4732db559f6364374454c6f1c99695be7896d50ece",
-      "size": 19840
+      "sha256": "923310a5a05325e5a98f18a982f815cabbe756ab5b36466007d2b181e85dbd2f",
+      "size": 19769
     },
     "references/energy-codimension.md": {
       "sha256": "6d420f634365dc034433243219d3d884c2e22a2755236cf5a247282b98f1bd45",
       "size": 11182
     },
     "references/mathematical-background.md": {
-      "sha256": "84ba1e5efcea81ee7bdc8d59a45fa3a88775f79465c3d0197eebbf206b24e721",
-      "size": 35351
+      "sha256": "964126bf359b398d1ce017513cccf1b8338c059a4d78cdf50d13297289fc7827",
+      "size": 35319
     },
     "references/navier-stokes/concentrated-packet.md": {
       "sha256": "562d4330651c48498f8d2bb13c38174acab098b5c73664a17d7cf66cd6cc53ef",
@@ -609,12 +865,12 @@
       "size": 2894
     },
     "references/navier-stokes/external-review-response.md": {
-      "sha256": "b1c077a826d91f0820c02463134c5c829eaad593e2bb7aadb988cd25a693399f",
-      "size": 6869
+      "sha256": "481a596ebabe436e664296e8510e40ae69764d3a0d134a05ad42aaaa61ec371f",
+      "size": 6867
     },
     "references/navier-stokes/fluid-lean-integration.md": {
-      "sha256": "1710c87346106c9deb198e61e799846d3d0665813b076bb294cddb3b2202df68",
-      "size": 8110
+      "sha256": "ff004099af9913f7d0b27c0a24bf2c5084a312372ba54a4268e4ab22744cc4e4",
+      "size": 8116
     },
     "references/navier-stokes/forced-admissibility.md": {
       "sha256": "389b5a4d990afd5bb6e64062edc63f476621cc25e460de59b41845d788c1f4fc",
@@ -653,11 +909,11 @@
       "size": 6791
     },
     "references/navier-stokes/next-transfer-review.md": {
-      "sha256": "3d0e604ccf001407730f4f308a2096f8b10343690b53a33a8d667048ab4c9fe6",
-      "size": 27361
+      "sha256": "77a75f10692c64e5eafb2975c1496e92164fa4eaf52983105ea1b55f1e63d3c3",
+      "size": 27367
     },
     "references/navier-stokes/openai-result-bridge.md": {
-      "sha256": "b43fc1e7a6ba4b54701be6b79848c57635343f1eb10f8ef9106717bb4d99b703",
+      "sha256": "82600ef474b67153ee8a66d9abb82ca71e8f7f54a7f2082da32d32eb6c526e91",
       "size": 22963
     },
     "references/navier-stokes/original-nonlinear-handover.md": {
@@ -685,7 +941,7 @@
       "size": 11683
     },
     "references/navier-stokes/research-strategy.md": {
-      "sha256": "7ad79aa03f4469115150a2325ac41ee6921a703dc4e542e97c2ac588a73c259f",
+      "sha256": "7920cdc9369c7ed2db2e5fa0a019cbf75fe55fff3b8d9552536b2549ef358ba8",
       "size": 51543
     },
     "references/navier-stokes/route-classification.md": {
@@ -720,13 +976,13 @@
       "sha256": "bc9529a4482abba348024d69cea46e1873df26c7bc54593f98ca22a6502d2c64",
       "size": 30261
     },
-    "scripts/build_textbook.py": {
-      "sha256": "85cb78b72f5c8bdd7617948f1a704713362c802b9d9ceda4d44a5bc38ed9845f",
-      "size": 19237
+    "scripts/build_notes.py": {
+      "sha256": "7566c18ca0c9e083edcb50ec9049b450044f261303a123ccc6fa1454ff3d236c",
+      "size": 19260
     },
     "scripts/update_publication_inventory.py": {
-      "sha256": "e334abfdbf4f88e9929e08101efebaf1fb5a1d56593ee3c2fe5948d8dded8caa",
-      "size": 6167
+      "sha256": "555773ecbf35478f4873fe67846d6aa5472ba9f9d25184e929f144272a05307d",
+      "size": 6158
     },
     "tests/requirements.txt": {
       "sha256": "72a7d8916d9988ad67122e7269c7f86f2493dfda92cea1097f8474cbe54e1a8c",
@@ -769,268 +1025,12 @@
       "size": 3189
     },
     "tests/test_publication_inventory.py": {
-      "sha256": "0a131d2a6956f38724afaf88f6f9dfcdb86e704e4b064489ba0ef37004022ca7",
-      "size": 4281
+      "sha256": "b2ce283ce8a555afeef6e4635b364ae3b53287c3b27349ddf5562d0aeb4512ff",
+      "size": 4266
     },
     "tests/test_publication_privacy.py": {
       "sha256": "8eff491847379c6c28c89fd15c9a0503c4d1bf3a05331f20edf5a86415141889",
       "size": 3150
-    },
-    "textbook/.gitignore": {
-      "sha256": "f51416e3b4fc3aa0dac645d7540262f40b0afc36688c81b411f12cd391038b0b",
-      "size": 15
-    },
-    "textbook/README.md": {
-      "sha256": "191c917e05c8801ff59073a2891a12ffdcc1ceed8e9331c6ffe0e955eaf57a40",
-      "size": 1830
-    },
-    "textbook/assets/book.css": {
-      "sha256": "09d2d4adc5a7490a3d7284e412536b6125ed70017dafb9827b3a19a75a9be3fd",
-      "size": 5840
-    },
-    "textbook/assets/book.js": {
-      "sha256": "4b59437148ceb86c36944e24d47aea252a93f46e468f6be49b546df2ff6650aa",
-      "size": 3992
-    },
-    "textbook/assets/fluid/README.md": {
-      "sha256": "5d68750d2203c91e8842edd678031374a623d6c589b18bc6023d615e2f82f4d9",
-      "size": 2261
-    },
-    "textbook/assets/fluid/checks.js": {
-      "sha256": "2aa4d7f1fda0c9767c96cc20e99ffade8e70241650d0ba11ae29274e6d128802",
-      "size": 5330
-    },
-    "textbook/assets/fluid/lab.css": {
-      "sha256": "ade25cbb57f214c04a141928a2ad26e9e355deb2488e72cbe45cacf7ce8cb9a6",
-      "size": 1803
-    },
-    "textbook/assets/fluid/lab.js": {
-      "sha256": "57c81e019d054141be9204fb00c149c0d4105522c3b2d9d494ec52cab52eacc4",
-      "size": 6251
-    },
-    "textbook/assets/fluid/package.json": {
-      "sha256": "c219945793cf0d279c82947a6522e9422b850a215c87cebf040a08aff87a8ee8",
-      "size": 54
-    },
-    "textbook/assets/fluid/protocol.js": {
-      "sha256": "820d72b59e86fa02bc8d58a48f5b50d7e3b7210283d349f0b8e998bc7bec63e1",
-      "size": 797
-    },
-    "textbook/assets/fluid/solver.js": {
-      "sha256": "8cf23c21cb891cd56b601b7539afcf8e3273415d26b2de752f8049a1430c1971",
-      "size": 9501
-    },
-    "textbook/assets/fluid/worker.js": {
-      "sha256": "b3403801c54aa47f164ef25c2fb7841603dacbbe8171bf537adb11bbb51b2857",
-      "size": 1638
-    },
-    "textbook/assets/maps.js": {
-      "sha256": "218a2c3a5a575e8226f01f137b02c0953452fdb2d79c03576ba058a5c524afd3",
-      "size": 4752
-    },
-    "textbook/book.json": {
-      "sha256": "c3c55ebeea3b7c2aa19674c3b2488fba8f05b3fef0e4aa2bde03bcef47cd5148",
-      "size": 2547
-    },
-    "textbook/chapters/activation.md": {
-      "sha256": "1ac98a93910e674a3bc6d598492261173c086e67aa7c59e3ca3a23c7f9ad7f26",
-      "size": 17528
-    },
-    "textbook/chapters/advanced-transfer.md": {
-      "sha256": "5a09c3cc6643d59a82964e038b7806848cd23f9cbe6f3c1dcde22594f99fef71",
-      "size": 39319
-    },
-    "textbook/chapters/calculus-bridge.md": {
-      "sha256": "e8864f14dd8bc85e1a4c765ad9494222369d235a6806261ea1e538a0b29013e4",
-      "size": 12919
-    },
-    "textbook/chapters/composition.md": {
-      "sha256": "c5dd5edd9be8e6ac9cda8d7e6dfeea665df4e142f44fc0a6bc9cf3f1eab99017",
-      "size": 19550
-    },
-    "textbook/chapters/concentration.md": {
-      "sha256": "94e7aed16665124700a75c43d0c8b0720a6d00d39534914e604ac71b07647110",
-      "size": 12645
-    },
-    "textbook/chapters/credits.md": {
-      "sha256": "326588f95abe76f0639a6ce4049ba962b9ab1ed81caf0fc8fb95869e003f0005",
-      "size": 1580
-    },
-    "textbook/chapters/equation.md": {
-      "sha256": "a0154a5929bba8ef58de6460947e22ea8cca705c6edcdb42f5202cf9378365b1",
-      "size": 16043
-    },
-    "textbook/chapters/evidence.md": {
-      "sha256": "780e7978622b7e95a40119782894abbc9e985b076a6715b05ce444e3796106cd",
-      "size": 11428
-    },
-    "textbook/chapters/generators.md": {
-      "sha256": "0b01394bca645c457ca13d17486e06281056b64cb52b61228813aa1b35dfafc2",
-      "size": 23987
-    },
-    "textbook/chapters/glossary.md": {
-      "sha256": "ff956cf2d5069dcecd0d6dcc47c41e6862c1f19f9cf2cc26ab25bb5e62d10e18",
-      "size": 6639
-    },
-    "textbook/chapters/index.md": {
-      "sha256": "1cd8d1210ff566ce8370ef32933b2839beaa9a7cd19ee2aa9b7920b5d840c9b5",
-      "size": 14787
-    },
-    "textbook/chapters/information-action.md": {
-      "sha256": "096a9b79bb0f9f6044eec9e3aa9c574e75c508f18c57865a7d66752a4fc46dcf",
-      "size": 13174
-    },
-    "textbook/chapters/iteration.md": {
-      "sha256": "2df0850bba4a95bf12132c655ec541ff44f79da1b9285b58930a741e61f01994",
-      "size": 14752
-    },
-    "textbook/chapters/new-constructions.md": {
-      "sha256": "ca3798a1bb97e1168067ae9a6aa1ed2b4a34e457a0c2b615a69faa98277beb30",
-      "size": 14124
-    },
-    "textbook/chapters/oblique.md": {
-      "sha256": "0ad2a3926598780301444639bf8061c7aae8ed7f60153a256083e59a4e327d49",
-      "size": 13759
-    },
-    "textbook/chapters/practice.md": {
-      "sha256": "6d89e890c89d7c5a3f033a91e04510b1999d28178f97ccdd3c60c87cf16e206c",
-      "size": 27304
-    },
-    "textbook/chapters/published-proof.md": {
-      "sha256": "f727a80a047f0274d634bfb03c1b5dab48741b346b0b73096a17b7070215c2c5",
-      "size": 21662
-    },
-    "textbook/chapters/reader-map.md": {
-      "sha256": "649ee45b0dcd150c0de898aa369348ff4d4831d96a4c33d73ee2e0696046ace5",
-      "size": 10155
-    },
-    "textbook/chapters/references.md": {
-      "sha256": "20aaea0029528a5529b0b7441d7b9c061c40b58a89e2d734a94ef672b99c0c4b",
-      "size": 8527
-    },
-    "textbook/chapters/residuals.md": {
-      "sha256": "dac688ef7a6b927a31d58be3d16a63c3b24fc906e545b51547e26d102f2ec233",
-      "size": 21060
-    },
-    "textbook/chapters/scaling.md": {
-      "sha256": "165e228152708b87f9af9ea29134b2ae736dc49a705db208febfae5d60fc5699",
-      "size": 17865
-    },
-    "textbook/chapters/simulator.md": {
-      "sha256": "614b635c59e534e822bddc2a812cd026c27ee1dbdce1c807a9df6f3610612200",
-      "size": 6781
-    },
-    "textbook/chapters/steady.md": {
-      "sha256": "38d28aa98ed8bbcdf8b28ad9e1c2f173be74275206c630b5a4ae92fb1434afb1",
-      "size": 11035
-    },
-    "textbook/chapters/transfer-systems.md": {
-      "sha256": "35a910af5b99a4d8764467ba9c3397ec9aa91c72764331f45cdd0fefc5b776d9",
-      "size": 15179
-    },
-    "textbook/chapters/transformations.md": {
-      "sha256": "27cd4c06bd7bc6bf8f6271c5a0b6ab8a89b306e20aedacf21024211834df81af",
-      "size": 21212
-    },
-    "textbook/chapters/viscous.md": {
-      "sha256": "b72c6adf71b4689c73303ea9d70a6b7622f959f4321b83c2c51eeac2c1280a6e",
-      "size": 20951
-    },
-    "textbook/claims.json": {
-      "sha256": "6fddb720405dcd12315b044688f10f261ea9fec58fcdad7c9aec2c3fc4592179",
-      "size": 79531
-    },
-    "textbook/claims.md": {
-      "sha256": "a3025480dbd16c86fcbb6725bf2a6de4a37358a0619d4d388770fec7e1fe2953",
-      "size": 54235
-    },
-    "textbook/course-outline.json": {
-      "sha256": "e9b2fa408804607739978c502439f6600f84d5964f9aff1d88f90dc659648927",
-      "size": 8575
-    },
-    "textbook/film/.gitignore": {
-      "sha256": "1135f3db0ee9982f02b2746393f524c6bb0ad23e291b33efbd1b4bfc604ea1a7",
-      "size": 58
-    },
-    "textbook/film/README.md": {
-      "sha256": "f4920665838161438e56f062ed081135fcf4d004c9ca5a0ad22c571aab71e9e2",
-      "size": 3208
-    },
-    "textbook/film/accuracy.md": {
-      "sha256": "b70fe95af097e87d0eeebb0139a5cbaa0b62a2a19b621a302ecc48927a403971",
-      "size": 2176
-    },
-    "textbook/film/checks.mjs": {
-      "sha256": "57d4580a468412f13c9e44d1b842ae84c6892c67afee3974aa3536a33c4d0371",
-      "size": 11654
-    },
-    "textbook/film/film.html": {
-      "sha256": "681acf6e47a5a0de30dbcb448bae5a78b20202b54122947a6a700c191f869e38",
-      "size": 841
-    },
-    "textbook/film/film.js": {
-      "sha256": "850d49385e485759f71caf964ed40e9fcac08c4c2c2d3a7b6e3efa5a6fd6092b",
-      "size": 99145
-    },
-    "textbook/film/inspect.mjs": {
-      "sha256": "b76f6f8809828f99fd6b7c6287dcf2eeeb9c5e21c3db3b42255e69ed51f22275",
-      "size": 3330
-    },
-    "textbook/film/labels.zh.js": {
-      "sha256": "2c7286ea6a698d05f81d8dbf1490e10238dbade58c4527c64e8a9f27336ea68b",
-      "size": 20126
-    },
-    "textbook/film/narrate.py": {
-      "sha256": "e65981b37bd98072b3e663f823753024c811d174cf8b06359cc9e70bf97a51f0",
-      "size": 9599
-    },
-    "textbook/film/package-lock.json": {
-      "sha256": "47708890c04487edc135f57d8d392b6ac746f77e55bcc26aa50a0b82f734bdc1",
-      "size": 2460
-    },
-    "textbook/film/package.json": {
-      "sha256": "650dbdcb72bdf48f0f730da108afef34b29a23e26811a9494a079969bda7f9df",
-      "size": 202
-    },
-    "textbook/film/render.mjs": {
-      "sha256": "05d73f03fd05851ffe82f01005bbda0b10375748384383a8f687273092923d8b",
-      "size": 5441
-    },
-    "textbook/film/requirements.txt": {
-      "sha256": "aeb3f1eabb8722ea0db03443e05be2a8e7da0ffbf1665c89e8457bb232f811e8",
-      "size": 31
-    },
-    "textbook/film/script.json": {
-      "sha256": "5e3f4834462a7561b04545e9b38cb215c5f187f4008182b604ef7d6f50ce2223",
-      "size": 31686
-    },
-    "textbook/film/script.zh.json": {
-      "sha256": "6f6a029f855226c91641e17afad4932c1180bb176d1657e0ef004767b167928e",
-      "size": 29623
-    },
-    "textbook/film/short.html": {
-      "sha256": "1bd71a3ebf58be7760c9834d994ff7a35f92db58112fe444f0d8d68c9eaf2249",
-      "size": 704
-    },
-    "textbook/film/short.js": {
-      "sha256": "87721830cc6b6f6322a11d0f2ec696edbd2daf2b9217d41209fe374ae58e712d",
-      "size": 7021
-    },
-    "textbook/film/short/script.en.json": {
-      "sha256": "46d767091f7ee12ce0f1a4146af06f8153de6a1d4cdd4935785d520908ae90d4",
-      "size": 2858
-    },
-    "textbook/film/short/script.zh.json": {
-      "sha256": "48a669a8d3beb6415e65fa79e3abbd9a39b18cde90a93ca96ecad7f6d3b16172",
-      "size": 2818
-    },
-    "textbook/film/zh.py": {
-      "sha256": "5c48ba81da01873d57c330fdf32291075d9cab9b6d3def06cb8d2bd76736db83",
-      "size": 19211
-    },
-    "textbook/requirements.txt": {
-      "sha256": "8d57742e7a0bb87adf2d3f3ecbe3dfcabaf3cb66c76d07912d3508e0d28d140c",
-      "size": 16
     },
     "transformatics/core.py": {
       "sha256": "c05923ed50abe0caaa7c87c8494fa6d234dbff936150e8a0bd099900e8f6d5fa",

@@ -13,10 +13,10 @@ node_modules/
 .idea/
 .env
 .env.*
-textbook/_site/
-textbook/review/
-textbook/film/render/
-textbook/film/out*/
+notes/_site/
+notes/review/
+notes/film/render/
+notes/film/out*/
 *.mp4
 *.mp3
 *.wav
